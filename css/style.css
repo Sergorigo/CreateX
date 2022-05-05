@@ -1,17 +1,11 @@
 @import url("null.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
 
-
-
-
-
 .wrapper {
    min-height: 100%;
    overflow: hidden;
    display: flex;
    flex-direction: column;
-
-
 }
 
 .main {
@@ -24,6 +18,7 @@
    /* outline: 1px solid #333; */
 }
 
+@media (max-width: 1260px) {}
 
 .header {
    position: absolute;
@@ -31,7 +26,6 @@
    top: 0;
    left: 0;
    z-index: 50;
-
 }
 
 .header__container {
@@ -40,8 +34,6 @@
    align-items: center;
 }
 
-.header__logo {}
-
 .header__menu {
    flex: 1 1 auto;
 }
@@ -49,16 +41,18 @@
 .menu {
    display: flex;
    justify-content: flex-start;
+
 }
 
 .menu__list {
    display: flex;
-
 }
 
 .menu__list:first-child {
-   margin: 0px 40px 0px 60px;
+   margin: 0px 0px 0px 60px;
 }
+
+
 
 .menu__item {
    margin: 0px 40px 0px 0px;
@@ -75,7 +69,6 @@
    color: #FF3F3A;
    text-decoration: underline;
 }
-
 
 .header__buttons {
    flex: 0 0 386px;
@@ -102,7 +95,6 @@
    background-color: #ff403ab3;
    text-decoration: underline;
 }
-
 
 .register-link {
    background: url('/img/NavBar/Profile.png') 0 3px no-repeat;
@@ -149,7 +141,6 @@
    border-radius: 50%;
 }
 
-
 .video-enjoy-studying__text {
    font-weight: 700;
    font-size: 14px;
@@ -163,8 +154,6 @@
    max-width: 460px;
 }
 
-.block-text {}
-
 .block-text__title {
    color: #1E212C;
    font-weight: 900;
@@ -174,8 +163,6 @@
    flex: 0 1 498px;
    margin: 0px 0px 60px 0px;
 }
-
-.block-text__button {}
 
 .colorless-button {
    flex: 1 0 206px;
@@ -221,9 +208,8 @@
 .number-list {
    display: flex;
    column-gap: 66px;
+   margin: 189px 0px 73px 0px;
 }
-
-
 
 .number-list__item {
    display: flex;
@@ -256,10 +242,7 @@
    align-self: center;
 }
 
-
 /* Блок с фото девушки в наушниках================================================== */
-
-
 .who-we-are {
    background-color: #fff;
    padding: 180px 0px 90px 0px;
@@ -287,8 +270,6 @@
 .who-we-are__title {
    margin: 0px 0px 40px 0px;
 }
-
-.subtitle-title {}
 
 .subtitle-title__string {
    text-transform: uppercase;
@@ -333,7 +314,6 @@
 .who-we-are__button {}
 
 /* Блок с карточками преподавателей=============================================== */
-
 .featured-сourses {
    padding: 90px 0px 60px;
    background-color: #fff;
@@ -341,10 +321,8 @@
 
 .featured-сourses__container {
    position: relative;
-
 }
 
-.featured-сourses__header {}
 
 .featured-сourses__title {
    margin: 0px 0px 60px 0px;
@@ -356,7 +334,6 @@
    right: 2px;
    margin: 0;
 }
-
 
 .teachers-cards {
    display: flex;
@@ -494,7 +471,6 @@
    padding: 10px 0px;
 }
 
-
 .block-navigation__link {
    padding: 0px 0px 0px 24px;
    font-weight: 700;
@@ -545,7 +521,6 @@
 .block-navigation__item:hover .block-navigation__link {
    color: #FF3F3A;
 }
-
 
 .our-benefits__content {
    display: flex;
@@ -602,14 +577,10 @@
 
 .our-events__events {}
 
-
-
 .list-events {
    display: flex;
    flex-direction: column;
 }
-
-
 
 .list-events__item {
    flex: 0 1 auto;
@@ -620,7 +591,6 @@
    margin: 0px 0px 24px 0px;
    background-color: #fff;
    border-radius: 4px;
-
 }
 
 .list-events__item:hover {
@@ -629,9 +599,6 @@
    z-index: 9999;
    box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
 }
-
-
-
 
 .list-events__date-block {
    flex: 0 1 257px;
@@ -650,8 +617,6 @@
    padding: 32px 20px 32px 40px;
 
 }
-
-
 
 .list-events__time {
    display: flex;
@@ -674,7 +639,6 @@
 
 .list-events__text-block {
    flex: 0 1 757px;
-
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -708,8 +672,6 @@
    margin: 0;
 }
 
-
-
 .quastion {
    display: flex;
    flex-direction: row;
@@ -729,17 +691,12 @@
 .quastion__button {}
 
 /* Блок с сертификатом===================================================== */
-
-
-
 .createx-certificate {}
 
 .createx-certificate__container {
    position: relative;
    min-height: 464px;
 }
-
-
 
 .createx-certificate__title {
    max-width: 400px;
@@ -765,7 +722,6 @@
    margin: 0px 0px 48px 0px;
 }
 
-
 .createx-certificate__text {
    margin: 0px 0px 32px 0px;
    max-width: 400px;
@@ -784,8 +740,6 @@
    flex: 0 1 33.333%;
 }
 
-
-
 .logo-block__sentinal {
    flex: 0 1 33.333%;
 }
@@ -799,12 +753,10 @@
    right: 0;
    top: 0;
    z-index: 100;
-
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* Блок встречайте нашу команду================================================== */
-
-
 .best-tutors {
    background-color: #F4F5F7;
    padding: 170px 0px 90px 0px;
@@ -1321,7 +1273,9 @@
 .subscribe-form-email {
    display: inline-block;
    margin: 0px 24px 0px 0px;
-
+   width: 322px;
+   height: 52px;
+   border-radius: 4px;
 }
 
 .subscribe-form__button {}
@@ -1519,6 +1473,10 @@
 
 .footer__email-address {
    margin: 0px 0px 12px 0px;
+   height: 36px;
+   width: 286px;
+   background-color: rgba(255, 255, 255, 0.12);
+   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer__footnode-input {
@@ -1527,7 +1485,6 @@
    color: #fff;
    opacity: 0.6;
 }
-
 
 
 .go-to-top {
@@ -1540,7 +1497,6 @@
    left: 0px;
    margin: 20px 0px;
    z-index: 50;
-
 }
 
 .go-to-top__written-heart img {
@@ -1553,7 +1509,6 @@
    margin: 18px 0px 19px 0px;
    z-index: 50;
 }
-
 
 .go-to-top__link {
    opacity: 0.6;
@@ -1573,4 +1528,213 @@
    opacity: 0.05;
    min-height: 58px;
    z-index: 10;
+}
+
+/* страница courses!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!========================================== */
+
+
+
+.our-online-courses {
+   padding: 130px 0px 0px 0px;
+}
+
+.our-online-courses__container {}
+
+.our-online-courses__title {
+   text-align: center;
+   margin: 20px 0px 60px 0px;
+}
+
+.our-online-courses__navigate {}
+
+.navigate-block {
+   display: flex;
+   flex-direction: row;
+   justify-items: center;
+   margin: 0px 0px 60px 0px;
+}
+
+.navigate-block__items {
+   flex: 1 1 800px;
+   display: flex;
+   flex-direction: row;
+   gap: 12px;
+}
+
+.navigate-block__link-box {
+   padding: 10px 20px;
+
+}
+
+.navigate-block__link-box:hover {
+   outline: 1px solid #FF3F3A;
+   border-radius: 4px;
+
+}
+
+.navigate-block__link {
+   font-weight: 700;
+   line-height: 1.6;
+   text-align: center;
+   color: #9A9CA5;
+   padding: 0px 10px 0px 0px;
+}
+
+.navigate-block__link-box:hover .navigate-block__link {
+   color: #FF3F3A;
+
+}
+
+.navigate-block__search {
+   flex: 0 0 315px;
+}
+
+.navigate-block__search-form {
+   min-width: 315px;
+   min-height: 46px;
+   border-radius: 4px;
+   border: 1px solid #D7DADD;
+}
+
+.our-online-courses__cards {
+   position: relative;
+   padding: 0px 0px 230px 0px;
+}
+
+.column-card {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 30px;
+
+}
+
+.column-card__item {
+   display: flex;
+   flex-direction: column;
+   max-width: 390px;
+   border: 1px solid #E5E8ED;
+   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+   border-radius: 5px;
+
+}
+
+.column-card__item:hover {
+   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+
+
+.column-card__image {
+   flex: 0 1 55%;
+   overflow: hidden;
+}
+
+.column-card__image img {
+   min-width: 100%;
+}
+
+.column-card__body {
+   flex: 0 1 45%;
+   padding: 25px;
+}
+
+.column-card__marked-word {
+   margin: 0px 0px 20px 0px;
+   display: inline-block;
+   padding: 1px 8px;
+   font-size: 14px;
+   line-height: 1.5;
+   color: #FFFFFF;
+   border-radius: 4px;
+}
+
+.purple-word {
+   background: #7772F1;
+}
+
+
+.column-card__title {
+   margin: 0px 0px 20px 0px;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5;
+   color: #1E212C;
+}
+
+.column-card__price {
+   display: inline-block;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1.5;
+   color: #FF4242;
+}
+
+
+.column-card__name {
+   font-size: 18px;
+   line-height: 1.5;
+   color: #787A80;
+}
+
+.column-card__name::before {
+   content: "";
+   display: inline-block;
+   width: 1px;
+   height: 17px;
+   background-color: #787A80;
+   margin: 0px 8px -2px;
+}
+
+.column-card__load-more {
+   position: absolute;
+   bottom: 120px;
+   left: 45.3%;
+}
+
+.column-card__link {
+   background: url('/img/our_online_courses/rounded_arrows.svg') 0 -1px no-repeat;
+   padding: 0px 0px 0px 40px;
+   font-weight: 700;
+   line-height: 1.6;
+   color: #424551;
+}
+
+.column-card__link:hover {
+   text-decoration: underline;
+}
+
+
+/* модификация testimonials ===================*/
+.testimonials-courses {
+   margin: 0px 0px 120px 0px;
+}
+
+.block-feedback_courses {
+   padding: 0px 0px 100px 0px;
+}
+
+
+
+/* модификация createx-certificate ============*/
+
+.createx-certificate__container-courses {
+   min-height: 500px;
+
+}
+
+.createx-certificate__title_courses {
+   padding: 83px 0px 0px 0px;
+}
+
+.createx-certificate__general-image-courses {
+   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+
+
+
+
+
+/* модификация subscribe-form-courses=========== */
+.subscribe-form-courses {
+   margin: 120px 0px 0px 0px;
 }
