@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico">
+   <title>Blog</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <a href="index.html" class="header__logo">
+               <img src="img/NavBar/logo.png" alt="Логотип">
+            </a>
+            <nav class="header__menu menu">
+               <ul class="menu__list">
+                  <li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
+                  <li class="menu__item"><a href="courses.html" class="menu__link">Courses</a></li>
+                  <li class="menu__item"><a href="events.html" class="menu__link">Events</a></li>
+                  <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                  <li class="menu__item"><a href="contacts.html" class="menu__link">Contacts</a></li>
+               </ul>
+            </nav>
+            <div class="header__buttons">
+               <a href="#" class="button">
+                  Get consultation
+               </a>
+               <a href="#" class="register-link">
+                  Log in / Register
+               </a>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="createx-school-journal">
+            <div class="createx-school-journal__container">
+               <div class="createx-school-journal__title subtitle-title">
+                  <span class="subtitle-title__string">About us</span>
+                  <h2 class="subtitle-title__title">Createx Online School</h2>
+               </div>
+               <div class="createx-school-journal__content-grid">
+                  <!-- панель навигации -->
+                  <div class="createx-school-journal__navigation-panel">
+                     <div class="createx-school-journal__items journal-items">
+                        <a href="#">
+                           <span class="journal-items__item">
+                              All
+                           </span>
+                        </a>
+                        <a href="#">
+                           <span class="journal-items__item article">
+                              Articles
+                           </span>
+                        </a>
+                        <a href="#">
+                           <span class="journal-items__item video">
+                              Videos
+                           </span>
+                        </a>
+                        <a href="#">
+                           <span class="journal-items__item podcast">
+                              Podcasts
+                           </span>
+                        </a>
+                     </div>
+                     <!-- блок с формами  -->
+                     <div class="createx-school-journal__items form-items">
+                        <span class="form-items__item">Blog category</span>
+                        <form action="#" class="form-items__item">
+                           <select name="categories" id="drop-list">
+                              <option value="1">All themes</option>
+                              <option value="2">Marketing</option>
+                              <option value="3">Development</option>
+                              <option value="4">Design</option>
+                              <option value="5">HR & Recruting</option>
+                              <option value="6">Management</option>
+                           </select>
+                           <div class="form-item__search-form">
+                              <input placeholder="Search blog..." type="text">
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="createx-school-journal__cards-journal">
+                     <!-- Первый ряд карточек  -->
+                     <div class="cards-content">
+                        <!-- карточка с контентом  -->
+                        <div class="cards-content__item">
+                           <!-- Картинка карточки -->
+                           <div class="cards-content__bkgd">
+                              <img src="img/our-blog/podcast_bgd.svg" alt="картинка на карточке">
+                              <div class="cards-content__link-box">
+                                 <div class="cards-content__podcast-link">
+                                    Podcast
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Информация под картинкой -->
+                           <div class="cards-content__info">
+                              <span class="cards-content__subject">
+                                 Marketing
+                              </span>
+
+                              <span class="cards-content__date">
+                                 September 4, 2020
+                              </span>
+
+                              <span class="cards-content__time">
+                                 36 min
+                              </span>
+                           </div>
+                           <!-- Текст карточки -->
+                           <div class="cards-content__text">
+                              <h3 class="cards-content__subtitle">What is traffic arbitrage and does it really make
+                                 money?
+                              </h3>
+                              <p>Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim
+                                 lacus,
+                                 purus gravida...</p>
+                           </div>
+                           <!-- Ссылка на контент -->
+                           <div class="cards-content__get">
+                              <a href="#" class="cards-content__arrowed-link">
+                                 Listen
+                                 <img src="img/our-blog/logo/arrow_orange.svg" alt="ораджевая стрелка">
+                              </a>
+                           </div>
+                        </div>
+                        <!-- карточка с контентом  -->
+                        <div class="cards-content__item">
+                           <!-- Картинка карточки -->
+                           <div class="cards-content__bkgd">
+                              <img src="img/createx_school_journal/card__bcgd/laptop.webp" alt="картинка на карточке">
+                              <div class="cards-content__link-box">
+                                 <div class="cards-content__article-link">
+                                    Article
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Информация под картинкой -->
+                           <div class="cards-content__info">
+                              <span class="cards-content__subject">
+                                 Development
+                              </span>
+
+                              <span class="cards-content__date">
+                                 September 1, 2020
+                              </span>
+
+                              <!-- <span class="cards-content__time">
+                                 36 min
+                              </span> -->
+                           </div>
+                           <!-- Текст карточки -->
+                           <div class="cards-content__text">
+                              <h3 class="cards-content__subtitle">How to choose the first programming language for a
+                                 beginner
+                              </h3>
+                              <p>Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet
+                                 enim egestas dui...</p>
+                           </div>
+                           <!-- Ссылка на контент -->
+                           <div class="cards-content__get">
+                              <a href="#" class="cards-content__arrowed-link">
+                                 Read
+                                 <img src="img/our-blog/logo/arrow_orange.svg" alt="ораджевая стрелка">
+                              </a>
+                           </div>
+                        </div>
+                        <!-- карточка с контентом  -->
+                        <div class="cards-content__item">
+                           <!-- Картинка карточки -->
+                           <div class="cards-content__bkgd">
+                              <img src="img/createx_school_journal/card__bcgd/man_hat.webp" alt="картинка на карточке">
+                              <div class="cards-content__link-box">
+                                 <div class="cards-content__video-link">
+                                    Video
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Информация под картинкой -->
+                           <div class="cards-content__info">
+                              <span class="cards-content__subject">
+                                 Design
+                              </span>
+
+                              <span class="cards-content__date">
+                                 August 8, 2020
+                              </span>
+
+                              <span class="cards-content__time">
+                                 40 min
+                              </span>
+                           </div>
+                           <!-- Текст карточки -->
+                           <div class="cards-content__text">
+                              <h3 class="cards-content__subtitle">Should you choose a creative profession if you are
+                                 attracted to creativity?
+                              </h3>
+                              <p>Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed
+                                 vulputate ultrices...</p>
+                           </div>
+                           <!-- Ссылка на контент -->
+                           <div class="cards-content__get">
+                              <a href="#" class="cards-content__arrowed-link">
+                                 Watch
+                                 <img src="img/our-blog/logo/arrow_orange.svg" alt="ораджевая стрелка">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Средний ряд карточек  -->
+                     <div class="content-cards-custom">
+                        <!-- карточка с контентом  -->
+                        <div class="content-cards-custom__item--big">
+                           <!-- Картинка карточки -->
+                           <div class="content-cards-custom__bkgd">
+                              <img src="img/createx_school_journal/card__bcgd/glasses_keyboard.webp"
+                                 alt="картинка на карточке">
+                              <div class="content-cards-custom__link-box">
+                                 <div class="content-cards-custom__article-link">
+                                    Article
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Информация под картинкой -->
+                           <div class="content-cards-custom__info">
+                              <span class="content-cards-custom__subject">
+                                 HR & Recruting
+                              </span>
+
+                              <span class="content-cards-custom__date">
+                                 August 3, 2020
+                              </span>
+
+                              <!-- <span class="content-cards-custom__time">
+                                 36 min
+                              </span> -->
+                           </div>
+                           <!-- Текст карточки -->
+                           <div class="content-cards-custom__text">
+                              <h3 class="content-cards-custom__subtitle">
+                                 HR statistics: job search, interviews, hiring
+                                 and recruiting
+                              </h3>
+                              <p>
+                                 Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam
+                                 adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam.
+                                 Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium...
+                              </p>
+                           </div>
+                           <!-- Ссылка на контент -->
+                           <div class="content-cards-custom__get">
+                              <a href="#" class="content-cards-custom__arrowed-link">
+                                 Read
+                                 <img src="img/our-blog/logo/arrow_orange.svg" alt="ораджевая стрелка">
+                              </a>
+                           </div>
+                        </div>
+                        <!-- карточка с контентом  -->
+                        <div class="content-cards-custom__item">
+                           <!-- Картинка карточки -->
+                           <div class="content-cards-custom__bkgd">
+                              <img src="img/createx_school_journal/card__bcgd/light_bulbs.webp"
+                                 alt="картинка на карточке">
+                              <div class="content-cards-custom__link-box">
+                                 <div class="content-cards-custom__video-link">
+                                    Video
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Информация под картинкой -->
+                           <div class="content-cards-custom__info">
+                              <span class="content-cards-custom__subject">
+                                 Management
+                              </span>
+
+                              <span class="content-cards-custom__date">
+                                 August 2, 2020
+                              </span>
+
+                              <span class="content-cards-custom__time">
+                                 45 min
+                              </span>
+                           </div>
+                           <!-- Текст карточки -->
+                           <div class="content-cards-custom__text">
+                              <h3 class="content-cards-custom__subtitle">
+                                 What to do and who to talk to if you want to get feedback on the product
+                              </h3>
+                              <p>
+                                 Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna
+                                 sagittis faucibus. Curabitur nisl tincidunt eros venenatis...
+                              </p>
+                           </div>
+                           <!-- Ссылка на контент -->
+                           <div class="content-cards-custom__get">
+                              <a href="#" class="content-cards-custom__arrowed-link">
+                                 Watch
+                                 <img src="img/our-blog/logo/arrow_orange.svg" alt="ораджевая стрелка">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Нижний ряд карточек -->
+                     <div class="cards-content">
+                        <!-- карточка с контентом  -->
+                        <div class="cards-content__item">
+                           <!-- Картинка карточки -->
+                           <div class="cards-content__bkgd">
+                              <img src="img/createx_school_journal/card__bcgd/road_snail.webp"
+                                 alt="картинка на карточке">
+                              <div class="cards-content__link-box">
+                                 <div class="cards-content__podcast-link">
+                                    Podcast
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Информация под картинкой -->
+                           <div class="cards-content__info">
+                              <span class="cards-content__subject">
+                                 Design
+                              </span>
+
+                              <span class="cards-content__date">
+                                 July 28, 2020
+                              </span>
+
+                              <span class="cards-content__time">
+                                 36 min
+                              </span>
+                           </div>
+                           <!-- Текст карточки -->
+                           <div class="cards-content__text">
+                              <h3 class="cards-content__subtitle">
+                                 What are color profiles and how they work in graphic design
+                              </h3>
+                              <p>
+                                 Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur
+                                 urna arcu eleifend...
+                              </p>
+                           </div>
+                           <!-- Ссылка на контент -->
+                           <div class="cards-content__get">
+                              <a href="#" class="cards-content__arrowed-link">
+                                 Listen
+                                 <img src="img/our-blog/logo/arrow_orange.svg" alt="ораджевая стрелка">
+                              </a>
+                           </div>
+                        </div>
+                        <!-- карточка с контентом  -->
+                        <div class="cards-content__item">
+                           <!-- Картинка карточки -->
+                           <div class="cards-content__bkgd">
+                              <img src="img/createx_school_journal/card__bcgd/vase_fases.webp"
+                                 alt="картинка на карточке">
+                              <div class="cards-content__link-box">
+                                 <div class="cards-content__video-link">
+                                    Video
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Информация под картинкой -->
+                           <div class="cards-content__info">
+                              <span class="cards-content__subject">
+                                 Management
+                              </span>
+
+                              <span class="cards-content__date">
+                                 July 15, 2020
+                              </span>
+
+                              <span class="cards-content__time">
+                                 45 min
+                              </span>
+                           </div>
+                           <!-- Текст карточки -->
+                           <div class="cards-content__text">
+                              <h3 class="cards-content__subtitle">
+                                 Startup: how to build a team that will live longer than a year
+                              </h3>
+                              <p>
+                                 Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at justo scelerisque in
+                                 nisi, urna...
+                              </p>
+                           </div>
+                           <!-- Ссылка на контент -->
+                           <div class="cards-content__get">
+                              <a href="#" class="cards-content__arrowed-link">
+                                 Watch
+                                 <img src="img/our-blog/logo/arrow_orange.svg" alt="ораджевая стрелка">
+                              </a>
+                           </div>
+                        </div>
+                        <!-- карточка с контентом  -->
+                        <div class="cards-content__item">
+                           <!-- Картинка карточки -->
+                           <div class="cards-content__bkgd">
+                              <img src="img/createx_school_journal/card__bcgd/typewriter.webp"
+                                 alt="картинка на карточке">
+                              <div class="cards-content__link-box">
+                                 <div class="cards-content__article-link">
+                                    Article
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Информация под картинкой -->
+                           <div class="cards-content__info">
+                              <span class="cards-content__subject">
+                                 Marketing
+                              </span>
+
+                              <span class="cards-content__date">
+                                 July 9, 2020
+                              </span>
+
+                              <!-- <span class="cards-content__time">
+                                 36 min
+                              </span> -->
+                           </div>
+                           <!-- Текст карточки -->
+                           <div class="cards-content__text">
+                              <h3 class="cards-content__subtitle">
+                                 How to get customers to love your business from the start
+                              </h3>
+                              <p>
+                                 Malesuada in augue mi feugiat morbi a aliquet enim. Elementum lacus, pellentesque etiam
+                                 arcu tristique ac...
+                              </p>
+                           </div>
+                           <!-- Ссылка на контент -->
+                           <div class="cards-content__get">
+                              <a href="#" class="cards-content__arrowed-link">
+                                 Listen
+                                 <img src="img/our-blog/logo/arrow_orange.svg" alt="ораджевая стрелка">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__row">
+               <!-- основной блок подвала -->
+               <div class="footer__general-block">
+                  <div class="footer__logo-box">
+                     <img src="img/footer/footer_logo.svg" alt="логотип" class="footer__logo">
+                  </div>
+                  <p class="footer__text">
+                     Createx Online School is a leader in online studying. We have lots of courses and programs from
+                     the
+                     main market experts. We provide relevant approaches to online learning, internships and
+                     employment
+                     in the largest companies in the country.
+                  </p>
+                  <div class="sotial-media">
+                     <div class="sotial-media__icon-facebook"></div>
+                     <div class="sotial-media__icon-twitter"></div>
+                     <div class="sotial-media__icon-youtube"></div>
+                     <div class="sotial-media__icon-telegram"></div>
+                     <div class="sotial-media__icon-instagram"></div>
+                     <div class="sotial-media__icon-in"></div>
+                  </div>
+               </div>
+               <!-- колонка навигации №1 -->
+               <div class="footer__site-map">
+                  <ul class="footer__list">
+                     <li class="footer__item">
+                        <h4 class="footer__subtitle">SITE MAP</h4>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">About Us</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Courses</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Events</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Blog</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Contacts</a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- колонка навигации №2 -->
+               <div class="footer__courses">
+                  <ul class="footer__list">
+                     <li class="footer__item">
+                        <h4 class="footer__subtitle">COURSES</h4>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Marketing</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Management</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">HR & Recruting</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Design</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Development</a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- блок с контактами -->
+               <div class="footer__contact-us">
+                  <h4 class="footer__subtitle">
+                     CONTACT US
+                  </h4>
+                  <div class="footer__tel">
+                     (405) 555-0128
+                  </div>
+                  <div class="footer__email">
+                     hello@createx.com
+                  </div>
+               </div>
+               <!-- блок для ввода имейла  -->
+               <div class="footer__newsletter">
+                  <h4 class="footer__subtitle-input">SIGN UP TO OUR NEWSLETTER</h4>
+                  <input class="footer__email-address" type="email">
+
+                  <p class="footer__footnode-input">
+                     *Subscribe to our newsletter to receive communications and early
+                     updates from Createx SEO Agency.
+                  </p>
+               </div>
+            </div>
+            <!-- Нижний блок с заметкой и ссылкой вверх -->
+            <div class="go-to-top">
+               <div class="go-to-top__written-heart">
+                  <img src="img/footer/copyright_footnode.svg" alt="Сноска">
+               </div>
+               <div class="go-to-top__link-box">
+                  <a href="#" class="go-to-top__link">
+                     GO TO TOP
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- светлый бэкграунд внизу -->
+         <div class="footer__bcgd-block">
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>
