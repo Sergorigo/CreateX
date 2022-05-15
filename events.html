@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico">
+   <title>Events</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <a href="index.html" class="header__logo">
+               <img src="img/NavBar/logo.png" alt="Логотип">
+            </a>
+            <nav class="header__menu menu">
+               <ul class="menu__list">
+                  <li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
+                  <li class="menu__item"><a href="courses.html" class="menu__link">Courses</a></li>
+                  <li class="menu__item"><a href="events.html" class="menu__link">Events</a></li>
+                  <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                  <li class="menu__item"><a href="contacts.html" class="menu__link">Contacts</a></li>
+               </ul>
+            </nav>
+            <div class="header__buttons">
+               <a href="#" class="button">
+                  Get consultation
+               </a>
+               <a href="#" class="register-link">
+                  Log in / Register
+               </a>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="long-events-list">
+            <div class="long-events-list__container">
+               <div class="long-events-list__title subtitle-title">
+                  <span class="subtitle-title__string">Our events</span>
+                  <h2 class="subtitle-title__title">Lectures, workshops & master-classes</h2>
+               </div>
+               <div class="long-events-list__event-categories">
+                  <!-- блок с панелью фильтров -->
+                  <div class="long-events-list__event-panel">
+                     <!-- выпадающий список 1 -->
+                     <div class="long-events-list__item-box">
+                        <span class="long-events-list__text">Event category</span>
+                        <input type="text" class="long-events-list__form">
+                     </div>
+                     <!-- выпадающий список 2 -->
+                     <div class="long-events-list__item-box">
+                        <span class="long-events-list__text">Sort by</span>
+                        <input type="text" class="long-events-list__form">
+                     </div>
+                     <!-- переключение списка -->
+                     <div class="long-events-list__item-box">
+                        <span class="long-events-list__text">Show</span>
+                        <input class="long-events-list__form-clicker" type="text" value="1">
+                        <span class="long-events-list__clicker-text">events per page</span>
+                     </div>
+                     <!-- форма для поиска -->
+                     <div class="long-events-list__item-box">
+                        <input class="long-events-list__form-search" type="text" value="   Search event...">
+                     </div>
+                     <div class="long-events-list__switcher-box">
+                        <a href="#" class="long-events-list__switcher-link-list">
+                           <img class="long-events-list__switcher" src="img/long_events_list/switcher_list_dark.svg"
+                              alt="кнопка вид списком">
+                        </a>
+                     </div>
+                     <div class="long-events-list__switcher-box">
+                        <a href="#" class="long-events-list__switcher-link-grid">
+                           <img class="long-events-list__switcher" src="img/long_events_list/switcher_grid_dark.svg"
+                              alt="кнопка вид сеткой">
+                        </a>
+                     </div>
+                  </div>
+                  <!-- блок с карточками  -->
+                  <div class="long-events-list__block list-events">
+                     <!-- блок с карточкой -->
+                     <div class="list-events__item list-events__item--long">
+                        <!-- блок дата, месяц, время -->
+                        <div class="list-events__date-block">
+                           <div class="list-events__date">
+                              05
+                           </div>
+                           <div class="list-events__time">
+                              <span class="month">
+                                 August
+                              </span>
+                              <span class="time">
+                                 11:00 - 14:00
+                              </span>
+                           </div>
+                        </div>
+                        <!-- текстовый блок -->
+                        <div class="list-events__text-block">
+                           <p class="list-events__text">
+                              Formation of the organizational structure of the company in the face of uncertainty.
+                           </p>
+                           <p class="list-events__info">
+                              Onine master-class
+                           </p>
+                        </div>
+                        <!-- блок с кнопкой -->
+                        <div class="list-events__button-block">
+                           <a href="#" class="list-events__button colorless-button">
+                              View more
+                           </a>
+                        </div>
+                     </div>
+                     <!-- блок с карточкой -->
+                     <div class="list-events__item list-events__item--long">
+                        <!-- блок дата, месяц, время -->
+                        <div class="list-events__date-block">
+                           <div class="list-events__date">
+                              24
+                           </div>
+                           <div class="list-events__time">
+                              <span class="month">
+                                 July
+                              </span>
+                              <span class="time">
+                                 11:00 – 12:30
+                              </span>
+                           </div>
+                        </div>
+                        <!-- текстовый блок -->
+                        <div class="list-events__text-block">
+                           <p class="list-events__text">
+                              Building a customer service department. Best Practices. </p>
+                           <p class="list-events__info">
+                              Onine lecture
+                           </p>
+                        </div>
+                        <!-- блок с кнопкой -->
+                        <div class="list-events__button-block">
+                           <a href="#" class="list-events__button colorless-button">
+                              View more
+                           </a>
+                        </div>
+                     </div>
+                     <!-- блок с карточкой -->
+                     <div class="list-events__item list-events__item--long">
+                        <!-- блок дата, месяц, время -->
+                        <div class="list-events__date-block">
+                           <div class="list-events__date">
+                              16
+                           </div>
+                           <div class="list-events__time">
+                              <span class="month">
+                                 July
+                              </span>
+                              <span class="time">
+                                 10:00 – 13:00
+                              </span>
+                           </div>
+                        </div>
+                        <!-- текстовый блок -->
+                        <div class="list-events__text-block">
+                           <p class="list-events__text">
+                              How to apply methods of speculative design in practice. Worldbuilding prototyping. </p>
+                           <p class="list-events__info">
+                              Onine workshop
+                           </p>
+                        </div>
+                        <!-- блок с кнопкой -->
+                        <div class="list-events__button-block">
+                           <a href="#" class="list-events__button colorless-button">
+                              View more
+                           </a>
+                        </div>
+                     </div>
+                     <!-- блок с карточкой -->
+                     <div class="list-events__item list-events__item--long">
+                        <!-- блок дата, месяц, время -->
+                        <div class="list-events__date-block">
+                           <div class="list-events__date">
+                              10
+                           </div>
+                           <div class="list-events__time">
+                              <span class="month">
+                                 July
+                              </span>
+                              <span class="time">
+                                 9:00 – 14:00
+                              </span>
+                           </div>
+                        </div>
+                        <!-- текстовый блок -->
+                        <div class="list-events__text-block">
+                           <p class="list-events__text">
+                              Find and evaluate: search and assessment tools for candidates.
+                           </p>
+                           <p class="list-events__info">
+                              Onine workshop
+                           </p>
+                        </div>
+                        <!-- блок с кнопкой -->
+                        <div class="list-events__button-block">
+                           <a href="#" class="list-events__button colorless-button">
+                              View more
+                           </a>
+                        </div>
+                     </div>
+                     <!-- блок с карточкой -->
+                     <div class="list-events__item list-events__item--long">
+                        <!-- блок дата, месяц, время -->
+                        <div class="list-events__date-block">
+                           <div class="list-events__date">
+                              27
+                           </div>
+                           <div class="list-events__time">
+                              <span class="month">
+                                 June
+                              </span>
+                              <span class="time">
+                                 15:00 – 19:00
+                              </span>
+                           </div>
+                        </div>
+                        <!-- текстовый блок -->
+                        <div class="list-events__text-block">
+                           <p class="list-events__text">
+                              Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.
+                           </p>
+                           <p class="list-events__info">
+                              Onine master-class
+                           </p>
+                        </div>
+                        <!-- блок с кнопкой -->
+                        <div class="list-events__button-block">
+                           <a href="#" class="list-events__button colorless-button">
+                              View more
+                           </a>
+                        </div>
+                     </div>
+                     <!-- блок с карточкой -->
+                     <div class="list-events__item list-events__item--long">
+                        <!-- блок дата, месяц, время -->
+                        <div class="list-events__date-block">
+                           <div class="list-events__date">
+                              15
+                           </div>
+                           <div class="list-events__time">
+                              <span class="month">
+                                 June
+                              </span>
+                              <span class="time">
+                                 10:00 – 12:00
+                              </span>
+                           </div>
+                        </div>
+                        <!-- текстовый блок -->
+                        <div class="list-events__text-block">
+                           <p class="list-events__text">
+                              Marketing or growth hacking: main differences and what business needs.
+                           </p>
+                           <p class="list-events__info">
+                              Onine lecture
+                           </p>
+                        </div>
+                        <!-- блок с кнопкой -->
+                        <div class="list-events__button-block">
+                           <a href="#" class="list-events__button colorless-button">
+                              View more
+                           </a>
+                        </div>
+                     </div>
+                     <!-- блок с карточкой -->
+                     <div class="list-events__item list-events__item--long">
+                        <!-- блок дата, месяц, время -->
+                        <div class="list-events__date-block">
+                           <div class="list-events__date">
+                              02
+                           </div>
+                           <div class="list-events__time">
+                              <span class="month">
+                                 June
+                              </span>
+                              <span class="time">
+                                 11:00 – 13:00
+                              </span>
+                           </div>
+                        </div>
+                        <!-- текстовый блок -->
+                        <div class="list-events__text-block">
+                           <p class="list-events__text">
+                              How to brief a client and present your design to approve it from the first show.
+                           </p>
+                           <p class="list-events__info">
+                              Onine lecture
+                           </p>
+                        </div>
+                        <!-- блок с кнопкой -->
+                        <div class="list-events__button-block">
+                           <a href="#" class="list-events__button colorless-button">
+                              View more
+                           </a>
+                        </div>
+                     </div>
+                     <!-- блок с карточкой -->
+                     <div class="list-events__item list-events__item--long">
+                        <!-- блок дата, месяц, время -->
+                        <div class="list-events__date-block">
+                           <div class="list-events__date">
+                              29
+                           </div>
+                           <div class="list-events__time">
+                              <span class="month">
+                                 May
+                              </span>
+                              <span class="time">
+                                 11:00 – 12:00
+                              </span>
+                           </div>
+                        </div>
+                        <!-- текстовый блок -->
+                        <div class="list-events__text-block">
+                           <p class="list-events__text">
+                              Who is a project manager and do I want to be PM?
+                           </p>
+                           <p class="list-events__info">
+                              Onine lecture
+                           </p>
+                        </div>
+                        <!-- блок с кнопкой -->
+                        <div class="list-events__button-block">
+                           <a href="#" class="list-events__button colorless-button">
+                              View more
+                           </a>
+                        </div>
+                     </div>
+                     <!-- блок с карточкой -->
+                     <div class="list-events__item list-events__item--long">
+                        <!-- блок дата, месяц, время -->
+                        <div class="list-events__date-block">
+                           <div class="list-events__date">
+                              18
+                           </div>
+                           <div class="list-events__time">
+                              <span class="month">
+                                 May
+                              </span>
+                              <span class="time">
+                                 10:00 – 12:00
+                              </span>
+                           </div>
+                        </div>
+                        <!-- текстовый блок -->
+                        <div class="list-events__text-block">
+                           <p class="list-events__text">
+                              The company's business page as an additional tool to support the announcement of
+                              vacancies.
+                           </p>
+                           <p class="list-events__info">
+                              Onine lecture
+                           </p>
+                        </div>
+                        <!-- блок с кнопкой -->
+                        <div class="list-events__button-block">
+                           <a href="#" class="list-events__button colorless-button">
+                              View more
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="list-events__number-block">
+                     <div class="list-events__number-block-item">
+                        <a class="list-events__switch-link" href="#">1</a>
+                     </div>
+                     <div class="list-events__number-block-item">
+                        <a class="list-events__switch-link" href="#">2</a>
+                     </div>
+                     <div class="list-events__number-block-item">
+                        <a class="list-events__switch-link" href="#">3</a>
+                     </div>
+                     <div class="list-events__number-block-item">
+                        <a class="list-events__switch-link" href="#">4</a>
+                     </div>
+
+                     <div class="list-events__number-block-item">
+                        <a class="list-events__arrow" href="#">
+                           <!-- <img src="img/long_events_list/footer_arrow.svg" alt="указательная стрелка"> -->
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="subscribe-form">
+            <div class="subscribe-form__container">
+               <div class="subscribe-form__title subtitle-title">
+                  <span class="subtitle-title__string">Don’t miss anything</span>
+                  <h2 class="subtitle-title__title">Subscribe to the Createx School announcements</h2>
+               </div>
+               <div class="subscribe-form__email-field">
+                  <input type="text" class="subscribe-form-email">
+                  <a href="#" class="subscribe-form__button button">
+                     Subscribe
+                  </a>
+               </div>
+               <img class="subscribe-form__image-left" src="img/subscribe-form/hands_and_hats.svg"
+                  alt="подброшенные шапки">
+               <img class="subscribe-form__image-right" src="img/subscribe-form/hands_and_hats.svg"
+                  alt="подброшенные шапки">
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__row">
+               <!-- основной блок подвала -->
+               <div class="footer__general-block">
+                  <div class="footer__logo-box">
+                     <img src="img/footer/footer_logo.svg" alt="логотип" class="footer__logo">
+                  </div>
+                  <p class="footer__text">
+                     Createx Online School is a leader in online studying. We have lots of courses and programs from
+                     the
+                     main market experts. We provide relevant approaches to online learning, internships and
+                     employment
+                     in the largest companies in the country.
+                  </p>
+                  <div class="sotial-media">
+                     <div class="sotial-media__icon-facebook"></div>
+                     <div class="sotial-media__icon-twitter"></div>
+                     <div class="sotial-media__icon-youtube"></div>
+                     <div class="sotial-media__icon-telegram"></div>
+                     <div class="sotial-media__icon-instagram"></div>
+                     <div class="sotial-media__icon-in"></div>
+                  </div>
+               </div>
+               <!-- колонка навигации №1 -->
+               <div class="footer__site-map">
+                  <ul class="footer__list">
+                     <li class="footer__item">
+                        <h4 class="footer__subtitle">SITE MAP</h4>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">About Us</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Courses</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Events</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Blog</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Contacts</a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- колонка навигации №2 -->
+               <div class="footer__courses">
+                  <ul class="footer__list">
+                     <li class="footer__item">
+                        <h4 class="footer__subtitle">COURSES</h4>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Marketing</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Management</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">HR & Recruting</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Design</a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#" class="footer__link">Development</a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- блок с контактами -->
+               <div class="footer__contact-us">
+                  <h4 class="footer__subtitle">
+                     CONTACT US
+                  </h4>
+                  <div class="footer__tel">
+                     (405) 555-0128
+                  </div>
+                  <div class="footer__email">
+                     hello@createx.com
+                  </div>
+               </div>
+               <!-- блок для ввода имейла  -->
+               <div class="footer__newsletter">
+                  <h4 class="footer__subtitle-input">SIGN UP TO OUR NEWSLETTER</h4>
+                  <input class="footer__email-address" type="email">
+
+                  <p class="footer__footnode-input">
+                     *Subscribe to our newsletter to receive communications and early
+                     updates from Createx SEO Agency.
+                  </p>
+               </div>
+            </div>
+            <!-- Нижний блок с заметкой и ссылкой вверх -->
+            <div class="go-to-top">
+               <div class="go-to-top__written-heart">
+                  <img src="img/footer/copyright_footnode.svg" alt="Сноска">
+               </div>
+               <div class="go-to-top__link-box">
+                  <a href="#" class="go-to-top__link">
+                     GO TO TOP
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- светлый бэкграунд внизу -->
+         <div class="footer__bcgd-block">
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>

@@ -37,6 +37,7 @@
          </div>
       </header>
       <main class="main">
+         <!-- Блок с контентными карточками  -->
          <div class="createx-school-journal">
             <div class="createx-school-journal__container">
                <div class="createx-school-journal__title subtitle-title">
@@ -47,26 +48,52 @@
                   <!-- панель навигации -->
                   <div class="createx-school-journal__navigation-panel">
                      <div class="createx-school-journal__items journal-items">
-                        <a href="#">
-                           <span class="journal-items__item">
+                        <div class="journal-items__item">
+                           <a class="all__link" href="#">
                               All
-                           </span>
-                        </a>
-                        <a href="#">
-                           <span class="journal-items__item article">
+                           </a>
+                        </div>
+                        <div class="journal-items__item article">
+                           <svg class="article__link-item" width="16" height="16" viewBox="0 0 16 16"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M5.33325 8.99967C5.33325 8.63148 5.63173 8.33301 5.99992 8.33301H9.99992C10.3681 8.33301 10.6666 8.63148 10.6666 8.99967C10.6666 9.36786 10.3681 9.66634 9.99992 9.66634H5.99992C5.63173 9.66634 5.33325 9.36786 5.33325 8.99967Z" />
+                              <path
+                                 d="M5.33325 11.4997C5.33325 11.1315 5.63173 10.833 5.99992 10.833H7.99992C8.36811 10.833 8.66659 11.1315 8.66659 11.4997C8.66659 11.8679 8.36811 12.1663 7.99992 12.1663H5.99992C5.63173 12.1663 5.33325 11.8679 5.33325 11.4997Z" />
+                              <path
+                                 d="M6.02853 1.02827C6.15355 0.903246 6.32312 0.833008 6.49993 0.833008H10.9999C12.4727 0.833008 13.6666 2.02692 13.6666 3.49967L13.6666 12.4997C13.6666 13.9724 12.4727 15.1663 10.9999 15.1663H4.99992C3.52716 15.1663 2.33325 13.9724 2.33325 12.4997L2.33327 4.99967C2.33327 4.82286 2.40351 4.65329 2.52853 4.52827L6.02853 1.02827ZM6.33325 2.60917V4.83301H4.10941L6.33325 2.60917ZM3.6666 6.16634L3.66659 12.4997C3.66658 13.2361 4.26354 13.833 4.99992 13.833H10.9999C11.7363 13.833 12.3333 13.2361 12.3333 12.4997L12.3333 3.49967C12.3333 2.76329 11.7363 2.16634 10.9999 2.16634H7.66658V5.49967C7.66658 5.86786 7.3681 6.16634 6.99991 6.16634H3.6666Z" />
+                           </svg>
+                           <a class="article__linked" href="#">
                               Articles
-                           </span>
-                        </a>
-                        <a href="#">
-                           <span class="journal-items__item video">
+                           </a>
+                        </div>
+
+                        <div class="journal-items__item video">
+                           <svg class="video__link-item" width="16" height="16" viewBox="0 0 16 16"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M10.7119 6.941C11.4102 7.47465 11.4102 8.52605 10.7119 9.0597L7.65865 11.3933C6.78125 12.0639 5.51566 11.4383 5.51566 10.334V5.66673C5.51566 4.56241 6.78125 3.93678 7.65865 4.60738L10.7119 6.941ZM9.90228 8.00035L6.84899 5.66673L6.84899 10.334L9.90228 8.00035Z" />
+                              <path
+                                 d="M8.00008 2.00033C4.68637 2.00033 2.00008 4.68662 2.00008 8.00033C2.00008 11.314 4.68637 14.0003 8.00008 14.0003C11.3138 14.0003 14.0001 11.314 14.0001 8.00033C14.0001 4.68662 11.3138 2.00033 8.00008 2.00033ZM0.666748 8.00033C0.666748 3.95024 3.94999 0.666992 8.00008 0.666992C12.0502 0.666992 15.3334 3.95024 15.3334 8.00033C15.3334 12.0504 12.0502 15.3337 8.00008 15.3337C3.94999 15.3337 0.666748 12.0504 0.666748 8.00033Z" />
+                           </svg>
+                           <a class="video__linked" href="#">
                               Videos
-                           </span>
-                        </a>
-                        <a href="#">
-                           <span class="journal-items__item podcast">
+                           </a>
+                        </div>
+                        <div class="journal-items__item podcast">
+                           <svg class="podcast__link-item" width="16" height="16" viewBox="0 0 16 16"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M4.13333 4.26706C4.13333 2.13156 5.8645 0.400391 8 0.400391C10.1355 0.400391 11.8667 2.13156 11.8667 4.26706V7.46706C11.8667 9.60256 10.1355 11.3337 8 11.3337C5.8645 11.3337 4.13333 9.60256 4.13333 7.46706V4.26706ZM8 1.73372C6.60088 1.73372 5.46667 2.86794 5.46667 4.26706V7.46706C5.46667 8.86618 6.60088 10.0004 8 10.0004C9.39912 10.0004 10.5333 8.86618 10.5333 7.46706V4.26706C10.5333 2.86794 9.39912 1.73372 8 1.73372Z" />
+                              <path
+                                 d="M2.66667 5.73372C3.03486 5.73372 3.33333 6.0322 3.33333 6.40039V7.46706C3.33333 10.0444 5.42267 12.1337 8 12.1337C10.5773 12.1337 12.6667 10.0444 12.6667 7.46706V6.40039C12.6667 6.0322 12.9651 5.73372 13.3333 5.73372C13.7015 5.73372 14 6.0322 14 6.40039V7.46706C14 10.7808 11.3137 13.4671 8 13.4671C4.68629 13.4671 2 10.7808 2 7.46706V6.40039C2 6.0322 2.29848 5.73372 2.66667 5.73372Z" />
+                              <path
+                                 d="M8 12.6671C8.36819 12.6671 8.66667 12.9655 8.66667 13.3337V14.2671H10.1333C10.5015 14.2671 10.8 14.5655 10.8 14.9337C10.8 15.3019 10.5015 15.6004 10.1333 15.6004H5.86667C5.49848 15.6004 5.2 15.3019 5.2 14.9337C5.2 14.5655 5.49848 14.2671 5.86667 14.2671H7.33333V13.3337C7.33333 12.9655 7.63181 12.6671 8 12.6671Z" />
+                           </svg>
+                           <a class="podcast__linked" href="#">
                               Podcasts
-                           </span>
-                        </a>
+                           </a>
+                        </div>
                      </div>
                      <!-- блок с формами  -->
                      <div class="createx-school-journal__items form-items">
@@ -444,6 +471,65 @@
                            </div>
                         </div>
                      </div>
+                  </div>
+                  <!-- блок с панелью цифр -->
+                  <div class="createx-school-journal__number-block">
+                     <div class="createx-school-journal__number-block-item">
+                        <a tabindex="1" class="createx-school-journal__switch-link">1</a>
+                     </div>
+                     <div class="createx-school-journal__number-block-item">
+                        <a tabindex="2" class="createx-school-journal__switch-link">2</a>
+                     </div>
+                     <div class="createx-school-journal__number-block-item">
+                        <a tabindex="3" class="createx-school-journal__switch-link">3</a>
+                     </div>
+                     <div class="createx-school-journal__number-block-item">
+                        <a tabindex="4" class="createx-school-journal__switch-link">4</a>
+                     </div>
+
+                     <div class="createx-school-journal__number-block-item">
+                        <a class="createx-school-journal__arrow" href="#">
+                           <!-- <img src="img/long_events_list/footer_arrow.svg" alt="указательная стрелка"> -->
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Блок с формой регистрации почты -->
+         <div class="articles-weekly">
+            <div class="articles-weekly__container">
+               <div class="articles-weekly__content-box">
+                  <!-- половина с картинкой  -->
+                  <div class="articles-weekly__image-box">
+                     <img class="articles-weekly__item-image" src="img/articles_weekly/illustration_articles.svg"
+                        alt="boy in library">
+                  </div>
+                  <!-- половина с контентом  -->
+                  <div class="articles-weekly__item-content">
+                     <h3 class="articles-weekly__title">
+                        Want to get the best articles weekly?
+                        Subscribe to our newsletter!
+                     </h3>
+                     <!-- форма для почты  -->
+                     <div class="articles-weekly__email-form-box">
+                        <form class="articles-weekly__form-email">
+                           <input class="articles-weekly__enter-form" type="email" placeholder="Your working email">
+                        </form>
+                        <button class="articles-weekly__btn button">
+                           Subscribe
+                        </button>
+                     </div>
+                     <!-- форма с радио кнопкой  -->
+                     <form class="articles-weekly__agreement">
+                        <div class="articles-weekly__checkbox">
+                           <input id="agreement" class="articles-weekly__agreement-input" name="agreement"
+                              type="checkbox" autocomplete="off">
+                           <label for="agreement" class="articles-weekly__agreement-lable">I agree to receive
+                              communications from Createx Online School
+                           </label>
+                        </div>
+                     </form>
                   </div>
                </div>
             </div>
