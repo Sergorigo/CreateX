@@ -6,48 +6,50 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico">
    <title>CreateX</title>
 </head>
 
 <body>
    <div class="wrapper">
-
       <header class="header">
          <div class="header__container">
-            <a href="#" class="header__logo">
+            <a href="index.html" class="header__logo">
                <img src="img/NavBar/logo.png" alt="Логотип">
             </a>
             <nav class="header__menu menu">
                <ul class="menu__list">
-                  <li class="menu__item"><a href="" class="menu__link">About Us</a></li>
-                  <li class="menu__item"><a href="" class="menu__link">Courses</a></li>
-                  <li class="menu__item"><a href="" class="menu__link">Events</a></li>
-                  <li class="menu__item"><a href="" class="menu__link">Blog</a></li>
-                  <li class="menu__item"><a href="" class="menu__link">Contacts</a></li>
+                  <li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
+                  <li class="menu__item"><a href="courses.html" class="menu__link">Courses</a></li>
+                  <li class="menu__item"><a href="events.html" class="menu__link">Events</a></li>
+                  <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                  <li class="menu__item"><a href="contacts.html" class="menu__link">Contacts</a></li>
                </ul>
             </nav>
             <div class="header__buttons">
                <a href="#" class="button">
                   Get consultation
                </a>
-               <a href="#" class="register-link">
+               <a href="#sign" class="register-link dialog-link">
                   Log in / Register
                </a>
             </div>
          </div>
+
+
       </header>
-
-
       <main class="main">
          <!-- Блок с картинкой студентки перед компьютером -->
          <div class="enjoy-studying">
+            <img class="bg_arrows" src="img/enjoy-studying/bg_img_arrows.svg" alt="arrows">
+            <img class="arrows_bg" src="img/enjoy-studying/bg_img_arrows.svg" alt="arrows">
+            <img class="bg_shapes" src="img/enjoy-studying/bg_shapes.svg" alt="shapes">
+            <img class="bg_sphere" src="img/enjoy-studying/bg_sphere.svg" alt="sphere">
             <div class="enjoy-studying__container">
                <div class="enjoy-studying__content">
                   <div class="enjoy-studying__video video-enjoy-studying">
                      <a href="#" class="video-enjoy-studying__icon">
-
                         <img src="img/enjoy-studying/hover.svg" alt="кнопка Play">
-
                      </a>
                      <div class="video-enjoy-studying__text">Play showreel</div>
                   </div>
@@ -65,11 +67,11 @@
                <div class="enjoy-studying__footer">
                   <ul class="enjoy-studying__list number-list">
                      <li class="number-list__item">1200<span class="number-list__text">Students graduated</span></li>
-                     <div class="number-list__orange-point"></div>
+                     <li class="number-list__orange-point"></li>
                      <li class="number-list__item">84<span class="number-list__text">Completed courses</span></li>
-                     <div class="number-list__orange-point"></div>
+                     <li class="number-list__orange-point"></li>
                      <li class="number-list__item">16<span class="number-list__text">Qualified tutors</span></li>
-                     <div class="number-list__orange-point"></div>
+                     <li class="number-list__orange-point"></li>
                      <li class="number-list__item">5<span class="number-list__text">Years of experience</span></li>
                   </ul>
                </div>
@@ -77,6 +79,9 @@
          </div>
          <!-- Блок с фото девушки в наушниках -->
          <div class="who-we-are">
+            <img class="who-we-are__dots-bg" src="img/who-we-are/dots_bg.svg" alt="dotted background">
+            <div class="who-we-are__small-round"></div>
+            <div class="who-we-are__big-round"></div>
             <div class="who-we-are__container">
                <div class="who-we-are__image">
                   <img src="img/who-we-are/Woman_and_laptop.png" alt="Девушка перед ноутбуком">
@@ -235,25 +240,57 @@
                   <span class="subtitle-title__string">Our benefits</span>
                   <h2 class="subtitle-title__title">That’s how we do it</h2>
                </div>
+               <!-- блок с ссылками под хавером -->
                <div class="our-benefits__navigation block-navigation">
+                  <!-- Ссылка с хавером  -->
                   <div class="block-navigation__item">
-                     <a href="#" class="block-navigation__link star">
+                     <svg class="star-logotype" width="16" height="16" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M6.77932 1.46709C7.24248 0.398992 8.75719 0.39899 9.22036 1.46709L10.6214 4.69809L14.1273 5.03216C15.2862 5.14259 15.7543 6.58317 14.8816 7.35373L12.2417 9.68467L13.0073 13.1221C13.2604 14.2585 12.035 15.1488 11.0325 14.5569L7.99984 12.7665L4.96721 14.5569C3.96469 15.1488 2.73926 14.2585 2.99236 13.1221L3.75801 9.68467L1.11809 7.35373C0.245398 6.58317 0.71347 5.14259 1.87242 5.03216L5.37824 4.69809L6.77932 1.46709ZM9.40091 5.22735L7.99984 1.99635L6.59876 5.22735C6.406 5.67189 5.98678 5.97647 5.50444 6.02243L1.99861 6.35649L4.63852 8.68743C5.00174 9.00813 5.16186 9.50095 5.05652 9.97389L4.29088 13.4114L7.32351 11.621C7.74075 11.3746 8.25893 11.3746 8.67617 11.621L11.7088 13.4114L10.9432 9.97389C10.8378 9.50095 10.9979 9.00813 11.3612 8.68743L14.0011 6.35649L10.4952 6.02243C10.0129 5.97647 9.59368 5.67189 9.40091 5.22735Z" />
+                     </svg>
+                     <a href="#" class="block-navigation__link">
                         Experienced Tutors
                      </a>
                   </div>
+                  <!-- Ссылка с хавером  -->
                   <div class="block-navigation__item">
-                     <a href="#" class="block-navigation__link feedback">
+                     <svg class="feedback-logotype" width="16" height="16" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M9.4547 2.16732C9.36168 2.16732 9.27547 2.21676 9.22843 2.29736L9.22433 2.30438L6.16683 7.26115V13.834H11.8907C12.0135 13.834 12.1198 13.7487 12.1464 13.629L12.1487 13.6186L13.8487 6.97883C13.8798 6.8179 13.7565 6.66732 13.5915 6.66732H11.0002C10.566 6.66732 10.1268 6.52228 9.80696 6.21014C9.47075 5.88199 9.31488 5.41203 9.41491 4.90572L9.89414 2.48001C9.92614 2.31806 9.80219 2.16732 9.63725 2.16732H9.4547ZM4.8335 13.834V7.73875H2.47118C2.32739 7.73875 2.2104 7.85476 2.20929 7.99872C2.20929 7.99872 2.20929 7.99872 2.20929 7.99872L2.16684 13.5701C2.16572 13.7154 2.28327 13.834 2.42868 13.834H4.8335ZM5.12809 6.40541L8.08155 1.61731C8.36843 1.13222 8.89032 0.833984 9.4547 0.833984H9.63725C10.6424 0.833984 11.397 1.75237 11.2022 2.73844L10.723 5.16415C10.7144 5.20732 10.72 5.22693 10.7213 5.23124C10.7228 5.23604 10.726 5.24402 10.7383 5.25596C10.7661 5.28317 10.8492 5.33398 11.0002 5.33398H13.5915C14.6121 5.33398 15.3701 6.27923 15.1487 7.27539L15.1464 7.28579L13.4453 13.93C13.2788 14.6537 12.6343 15.1673 11.8907 15.1673H2.42868C1.54298 15.1673 0.826756 14.4457 0.833544 13.56C0.833544 13.56 0.833544 13.56 0.833544 13.56L0.875993 7.98854C0.88271 7.11235 1.59485 6.40541 2.47118 6.40541H5.12809Z" />
+                     </svg>
+                     <a href="#" class="block-navigation__link">
                         Feedback & Support
                      </a>
                   </div>
+                  <!-- Ссылка с хавером  -->
                   <div class="block-navigation__item">
-                     <a href="#" class="block-navigation__link online-library">
+                     <svg class="online-library-logotype" width="16" height="16" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M7.70184 0.736398C7.88953 0.642555 8.11044 0.642555 8.29813 0.736398L14.9648 4.06973C15.1906 4.18266 15.3333 4.4135 15.3333 4.66602C15.3333 4.91853 15.1906 5.14937 14.9648 5.2623L8.29813 8.59563C8.11044 8.68948 7.88953 8.68948 7.70184 8.59563L1.03517 5.2623C0.809318 5.14937 0.66665 4.91853 0.66665 4.66602C0.66665 4.4135 0.809318 4.18266 1.03517 4.06973L7.70184 0.736398ZM2.82403 4.66602L7.99998 7.25399L13.1759 4.66602L7.99998 2.07804L2.82403 4.66602Z" />
+                        <path
+                           d="M0.737032 7.70121C0.901691 7.37189 1.30214 7.2384 1.63146 7.40306L7.99998 10.5873L14.3685 7.40306C14.6978 7.2384 15.0983 7.37189 15.2629 7.70121C15.4276 8.03052 15.2941 8.43097 14.9648 8.59563L8.29813 11.929C8.11044 12.0228 7.88953 12.0228 7.70184 11.929L1.03517 8.59563C0.705855 8.43097 0.572372 8.03052 0.737032 7.70121Z" />
+                        <path
+                           d="M0.737032 11.0345C0.901691 10.7052 1.30214 10.5717 1.63146 10.7364L7.99998 13.9207L14.3685 10.7364C14.6978 10.5717 15.0983 10.7052 15.2629 11.0345C15.4276 11.3639 15.2941 11.7643 14.9648 11.929L8.29813 15.2623C8.11044 15.3561 7.88953 15.3561 7.70184 15.2623L1.03517 11.929C0.705855 11.7643 0.572372 11.3639 0.737032 11.0345Z" />
+                     </svg>
+
+                     <a href="#" class="block-navigation__link ">
                         24/7 Online
                         Library
                      </a>
                   </div>
+                  <!-- Ссылка с хавером  -->
                   <div class="block-navigation__item">
-                     <a href="#" class="block-navigation__link community">
+                     <svg class="community-logotype" width="16" height="16" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M14.6153 6.04557C14.5204 6.70339 14.2954 7.32861 13.9619 7.90355C13.9869 8.0459 13.9997 8.18978 13.9997 8.33429C13.9997 8.83617 13.8543 9.3165 13.5849 9.7529C13.4504 9.97073 13.4158 10.226 13.4025 10.3946C13.3873 10.5879 13.3924 10.7994 13.4062 11.0025C13.4217 11.2304 13.4497 11.4697 13.4818 11.6954C13.2216 11.6196 12.9395 11.5434 12.6704 11.4826C12.4465 11.4321 12.2174 11.3891 12.0099 11.3676C11.8289 11.349 11.5674 11.3345 11.3335 11.4101C10.8221 11.5754 10.2594 11.6676 9.66636 11.6676C8.96109 11.6676 8.31335 11.5424 7.74559 11.325C7.60903 11.3312 7.47146 11.3343 7.33301 11.3343C6.52993 11.3343 5.75701 11.2287 5.03385 11.0335C6.08516 12.2494 7.81828 13.001 9.66636 13.001C10.3883 13.001 11.0812 12.8901 11.7198 12.6864C11.7209 12.6865 11.723 12.6864 11.726 12.6864C11.7424 12.686 11.7879 12.6851 11.8729 12.6939C12.0067 12.7077 12.1786 12.7385 12.377 12.7833C12.7719 12.8724 13.2157 13.0038 13.5615 13.1136C14.2949 13.3464 15.0056 12.7064 14.8745 11.9621C14.8181 11.6418 14.7595 11.2508 14.7365 10.9122C14.7249 10.7419 14.7236 10.6021 14.7317 10.4995C14.7351 10.457 14.7394 10.4304 14.7421 10.4162C15.1172 9.79487 15.333 9.08744 15.333 8.33429C15.333 7.48526 15.0693 6.70995 14.6153 6.04557Z" />
+                        <path
+                           d="M3.73109 2.79943C2.83245 3.48662 2.33306 4.38871 2.33306 5.33398C2.33306 5.80534 2.45577 6.25932 2.68599 6.68147C2.77367 6.84226 2.79854 7.00812 2.80744 7.1204C2.81714 7.24283 2.8123 7.36867 2.80166 7.48633C2.78034 7.72191 2.72949 7.98884 2.66849 8.25174C2.59715 8.55927 2.50572 8.88724 2.41296 9.19518C2.76512 9.06719 3.15003 8.93601 3.51493 8.82956C3.80985 8.74352 4.10767 8.66886 4.37274 8.62695C4.60108 8.59084 4.93243 8.55536 5.2177 8.65405C5.85792 8.87555 6.57411 9.00065 7.33306 9.00065C8.76451 9.00065 10.0358 8.55621 10.935 7.86854C11.8337 7.18135 12.3331 6.27926 12.3331 5.33398C12.3331 4.38871 11.8337 3.48662 10.935 2.79943C10.0358 2.11176 8.76451 1.66732 7.33306 1.66732C5.90162 1.66732 4.63034 2.11176 3.73109 2.79943ZM2.92116 1.74028C4.07283 0.859589 5.6349 0.333984 7.33306 0.333984C9.03123 0.333984 10.5933 0.859589 11.745 1.74028C12.8973 2.62145 13.6664 3.88602 13.6664 5.33398C13.6664 6.78194 12.8973 8.04652 11.745 8.92769C10.5933 9.80838 9.03123 10.334 7.33306 10.334C6.43769 10.334 5.58244 10.188 4.80591 9.92241C4.80513 9.92459 4.74215 9.91843 4.58098 9.94392C4.39521 9.97329 4.15809 10.0308 3.88836 10.1095C3.35138 10.2662 2.74835 10.4878 2.28902 10.6666C1.49327 10.9763 0.682633 10.212 0.95074 9.39795C1.09284 8.96647 1.26043 8.42121 1.36966 7.95041C1.42468 7.71324 1.46039 7.51385 1.47375 7.36618C1.47839 7.31492 1.47958 7.27756 1.47932 7.2523C1.17246 6.66592 0.99973 6.01748 0.99973 5.33398C0.99973 3.88602 1.76887 2.62145 2.92116 1.74028Z" />
+                     </svg>
+                     <a href="#" class="block-navigation__link">
                         Community
                      </a>
                   </div>
@@ -282,6 +319,10 @@
          </div>
          <!-- Блок с карточками событий -->
          <div class="our-events">
+            <div class="our-events__first-round"></div>
+            <div class="our-events__second-round"></div>
+            <div class="our-events__third-round"></div>
+            <img src="img/our-events/dots.svg" alt="dots" class="our-events__dots">
             <div class="our-events__container">
                <div class="our-events__title subtitle-title">
                   <span class="subtitle-title__string">Our Events</span>
@@ -427,14 +468,29 @@
          </div>
          <!-- Слайдер с карточками преподавателей -->
          <div class="best-tutors">
+            <img src="img/best-tutors/round.svg" alt="round" class="best-tutors__round-box">
+            <img src="img/best-tutors/dots.svg" alt="dots" class="best-tutors__dots">
+            <img src="img/best-tutors/shapes.svg" alt="shapes" class="best-tutors__shapes">
             <div class="best-tutors__container">
                <div class="best-tutors__title subtitle-title">
                   <span class="subtitle-title__string">Best tutors are all here</span>
                   <h2 class="subtitle-title__title">Meet our team</h2>
                </div>
                <!-- кнопки слайдера -->
-               <a class="buttons-slider_right"></a>
-               <a class="buttons-slider_left"></a>
+               <a class="right-slide">
+                  <svg class="right-slide__arrow" width="19" height="12" viewBox="0 0 19 12"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M12.341 0.792893C12.7247 0.402369 13.3467 0.402369 13.7304 0.792893L18.1513 5.29289C18.535 5.68342 18.535 6.31658 18.1513 6.70711L13.7304 11.2071C13.3467 11.5976 12.7247 11.5976 12.341 11.2071C11.9574 10.8166 11.9574 10.1834 12.341 9.79289L15.0849 7H1.7378C1.19522 7 0.755371 6.55228 0.755371 6C0.755371 5.44772 1.19522 5 1.7378 5H15.0849L12.341 2.20711C11.9574 1.81658 11.9574 1.18342 12.341 0.792893Z" />
+                  </svg>
+               </a>
+               <a class="left-slide">
+                  <svg class="left-slide__arrow" width="19" height="12" viewBox="0 0 19 12"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M6.69705 11.2071C6.31338 11.5976 5.69134 11.5976 5.30768 11.2071L0.886756 6.70711C0.503095 6.31658 0.503095 5.68342 0.886756 5.29289L5.30768 0.792893C5.69134 0.402369 6.31338 0.402369 6.69705 0.792893C7.08071 1.18342 7.08071 1.81658 6.69705 2.20711L3.95323 5L17.3003 5C17.8429 5 18.2827 5.44772 18.2827 6C18.2827 6.55228 17.8429 7 17.3003 7L3.95323 7L6.69705 9.79289C7.08071 10.1834 7.08071 10.8166 6.69705 11.2071Z" />
+                  </svg>
+               </a>
                <!-- Блок с карточками -->
                <div class="best-tutors__slider">
                   <div class="body-slider">
@@ -537,6 +593,13 @@
          </div>
          <!-- Слайдер с рекомендациями -->
          <div class="testimonials">
+            <div class="testimonials__first-round"></div>
+            <div class="testimonials__second-round"></div>
+            <div class="testimonials__third-round"></div>
+            <img class="testimonials__dots" src="img/our-events/dots.svg" alt="dots">
+            <img class="testimonials__shapes" src="img/testimonials/shapes.svg" alt="shapes">
+            <div class="testimonials__corner-round"></div>
+            <div class="testimonials__corner-round_2"></div>
             <div class="testimonials__container">
                <div class="testimonials__title subtitle-title">
                   <span class="subtitle-title__string">TESTIMONIALS</span>
@@ -547,9 +610,17 @@
                   <div class="block-feedback__slider-controls">
                      <!-- кнопка    -->
                      <div class="block-feedback__button-box">
-                        <a href="#" class="block-feedback__button-left"></a>
+                        <a id="button-left" class="block-feedback__button-left">
+                           <svg class="arrow-slider" width="19" height="12" viewBox="0 0 19 12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z" />
+                           </svg>
+                        </a>
                      </div>
                      <!-- кнопка    -->
+
+                     <!-- слайд с отзывом  -->
                      <div class="block-feedback__testimonal-container">
                         <img src="img/testimonials/braces.svg" alt="ковычки" class="block-feedback__braces">
                         <div class="block-feedback__card">
@@ -570,14 +641,106 @@
                            </div>
                         </div>
                      </div>
+                     <!-- слайд с отзывом  -->
+                     <div class="block-feedback__testimonal-container">
+                        <img src="img/testimonials/braces.svg" alt="ковычки" class="block-feedback__braces">
+                        <div class="block-feedback__card">
+                           <p class="block-feedback__text">
+                              Amazing experience ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus
+                              quam viverra
+                              mus
+                              ulputate etiam eros. Pulvinar neque pharetra
+                              arcu
+                              diam maecenas diam integer in.
+                           </p>
+                           <div class="block-feedback__avatar">
+                              <div class="image-avatar">
+                                 <img src="img/testimonials/avatar_2.jpg" alt="аватарка">
+                              </div>
+                              <span class="name-avatar">Victory Zay</span>
+                              <span class="position-avatar">Position, Course</span>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- слайд с отзывом  -->
+                     <div class="block-feedback__testimonal-container">
+                        <img src="img/testimonials/braces.svg" alt="ковычки" class="block-feedback__braces">
+                        <div class="block-feedback__card">
+                           <p class="block-feedback__text">
+                              Just great lputate etiam eros. Pulvinar neque pharetra
+                              arcu
+                              diam maecenas diam integer in.
+                           </p>
+                           <div class="block-feedback__avatar">
+                              <div class="image-avatar">
+                                 <img src="img/testimonials/avatar_3.jpg" alt="аватарка">
+                              </div>
+                              <span class="name-avatar">Elizabeth Davy</span>
+                              <span class="position-avatar">Position, Course</span>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- слайд с отзывом  -->
+                     <div class="block-feedback__testimonal-container">
+                        <img src="img/testimonials/braces.svg" alt="ковычки" class="block-feedback__braces">
+                        <div class="block-feedback__card">
+                           <p class="block-feedback__text">
+                              I am so exited ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                              viverra
+                              mus
+                              lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
+                              turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra
+                              arcu Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi ad non nobis sunt,
+                              maxime quidem neque ipsum eaque. Doloremque ducimus itaque odit voluptatibus perferendis
+                              nam perspiciatis eius reiciendis quam delectus.
+                              diam maecenas diam integer in.
+                           </p>
+                           <div class="block-feedback__avatar">
+                              <div class="image-avatar">
+                                 <img src="img/testimonials/avatar_4.jpg" alt="аватарка">
+                              </div>
+                              <span class="name-avatar">Tim Bocher</span>
+                              <span class="position-avatar">Position, Course</span>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- слайд с отзывом  -->
+                     <div class="block-feedback__testimonal-container">
+                        <img src="img/testimonials/braces.svg" alt="ковычки" class="block-feedback__braces">
+                        <div class="block-feedback__card">
+                           <p class="block-feedback__text">
+                              Nothing better was happening with me, consectetur adipiscing elit. Justo, amet lectus quam
+                              viverra
+                              mus
+                              lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
+                              turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra
+                              arcu
+                              diam maecenas diam integer in.
+                           </p>
+                           <div class="block-feedback__avatar">
+                              <div class="image-avatar">
+                                 <img src="img/testimonials/avatar_5.jpg" alt="аватарка">
+                              </div>
+                              <span class="name-avatar">Genry Horst</span>
+                              <span class="position-avatar">Position, Course</span>
+                           </div>
+                        </div>
+                     </div>
                      <!-- кнопка    -->
                      <div class="block-feedback__button-box">
-                        <a href="#" class="block-feedback__button-right"></a>
+                        <a id="button-right" class="block-feedback__button-right">
+                           <svg class="arrow-slider" width="19" height="12" viewBox="0 0 19 12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M12.341 0.792893C12.7247 0.402369 13.3467 0.402369 13.7304 0.792893L18.1513 5.29289C18.535 5.68342 18.535 6.31658 18.1513 6.70711L13.7304 11.2071C13.3467 11.5976 12.7247 11.5976 12.341 11.2071C11.9574 10.8166 11.9574 10.1834 12.341 9.79289L15.0849 7H1.7378C1.19522 7 0.755371 6.55228 0.755371 6C0.755371 5.44772 1.19522 5 1.7378 5H15.0849L12.341 2.20711C11.9574 1.81658 11.9574 1.18342 12.341 0.792893Z" />
+                           </svg>
+
+                        </a>
                      </div>
                      <!-- кнопка    -->
                   </div>
                   <div class="bullet-navigation">
-                     <div class="bullet-navigation__item"></div>
+                     <div class="bullet-navigation__item active"></div>
                      <div class="bullet-navigation__item"></div>
                      <div class="bullet-navigation__item"></div>
                      <div class="bullet-navigation__item"></div>
@@ -599,7 +762,7 @@
                      <span class="subtitle-title__string">Our blog</span>
                      <h2 class="subtitle-title__title">Latest posts</h2>
                   </div>
-                  <a href="#" class="our-blog__button button">
+                  <a href="blog.html" class="our-blog__button button">
                      Go to blog
                   </a>
                </div>
@@ -692,7 +855,6 @@
                      <!-- Картинка карточки -->
                      <div class="cards-content__bkgd">
                         <img src="img/our-blog/article_bgd.svg" alt="картинка на карточке">
-
                         <div class="cards-content__link-box">
                            <a href="#" class="cards-content__article-link">
                               Article
@@ -704,12 +866,9 @@
                         <span class="cards-content__subject">
                            Design
                         </span>
-
                         <span class="cards-content__date">
                            August 8, 2020
                         </span>
-
-
                      </div>
                      <!-- Текст карточки -->
                      <div class="cards-content__text">
@@ -721,13 +880,12 @@
                      <!-- Ссылка на контент -->
                      <div class="cards-content__get">
                         <a href="#" class="cards-content__arrowed-link">
-                           Listen
+                           Read
                            <img src="img/our-blog/logo/arrow_orange.svg" alt="ораджевая стрелка">
                         </a>
                      </div>
                   </div>
                </div>
-
             </div>
          </div>
          <!-- Поле ввода имэйла -->
@@ -738,7 +896,11 @@
                   <h2 class="subtitle-title__title">Subscribe to the Createx School announcements</h2>
                </div>
                <div class="subscribe-form__email-field">
-                  <input type="text" class="subscribe-form-email">
+                  <form class="subscribe-form-email">
+                     <input class="subscribe-form-email" autocomplete="off" type="email"
+                        placeholder="    Your working email">
+                  </form>
+
                   <a href="#" class="subscribe-form__button button">
                      Subscribe
                   </a>
@@ -779,19 +941,19 @@
                         <h4 class="footer__subtitle">SITE MAP</h4>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">About Us</a>
+                        <a href="about.html" class="footer__link">About Us</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Courses</a>
+                        <a href="courses.html" class="footer__link">Courses</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Events</a>
+                        <a href="events.html" class="footer__link">Events</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Blog</a>
+                        <a href="blog.html" class="footer__link">Blog</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Contacts</a>
+                        <a href="contacts.html" class="footer__link">Contacts</a>
                      </li>
                   </ul>
                </div>
@@ -833,7 +995,11 @@
                <!-- блок для ввода имейла  -->
                <div class="footer__newsletter">
                   <h4 class="footer__subtitle-input">SIGN UP TO OUR NEWSLETTER</h4>
-                  <input class="footer__email-address" type="text">
+
+                  <form class="footer__email-address">
+                     <a href="#" class="adress-link"><img src="img/footer/input/right_arrow.svg" alt="arrow"></a>
+                     <input class="footer__address-email" placeholder="Email address" type="email">
+                  </form>
                   <p class="footer__footnode-input">
                      *Subscribe to our newsletter to receive communications and early
                      updates from Createx SEO Agency.
@@ -856,9 +1022,91 @@
          <div class="footer__bcgd-block">
          </div>
       </footer>
+      <!-- форма входа в аккаунт  -->
+      <div id="sign" class="sign-in">
+         <div class="sign-in__body">
+            <div class="sign-in__content">
+               <a class="sign-in__close close-dialog" href="#"></a>
+               <div class="sign-in__title">Sign in</div>
+               <p class="sign-in__text">
+                  Sign in to your account using email and password provided during registration.
+               </p>
+               <form class="sign-in__register" action="#">
 
+                  <div class="sign-in__email">
+                     <label class="sign-in__label-email" for="#">Email</label>
+                     <input class="sign-in__input-email" placeholder="Your working email" type="email">
+                  </div>
+
+                  <div class="sign-in__pass">
+                     <label class="sign-in__label-pass" for="#">Password</label>
+                     <input class="sign-in__input-pass" type="password" placeholder="Your password" autocomplete="off">
+                     <img class="sign-in__eye-pass" src="img/sign_in/logo/eye.svg" alt="eye">
+                  </div>
+
+                  <div class="sign-in__keep-password">
+
+                     <div class="sign-in__checkbox">
+                        <input id="keep" name="keep" type="checkbox" class="sign-in__check">
+                        <label for="keep" class="sign-in__label-check">
+                           Keep me signed in
+                        </label>
+                     </div>
+
+                     <div class="sign-in__forgot">
+                        <a href="#" class="sign-in__recover-link">
+                           Forgot password?
+                        </a>
+                     </div>
+
+                  </div>
+
+                  <button class="sign-in__button button">
+                     Sign in
+                  </button>
+               </form>
+               <div class="sign-in__account">
+                  <span class="sign-in__have">Don't have an account?
+                     <a class="sign-in__link" href="#">
+                        Sign up
+                     </a>
+                  </span>
+               </div>
+               <h3 class="sign-in__sotial-subtitle">
+                  Or sign in with
+               </h3>
+               <div class="sign-in__media-box">
+                  <svg class="sign-in__facebook--logo" width="20" height="20" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z" />
+                  </svg>
+                  <svg class="sign-in__google--logo" width="20" height="20" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M10.1761 8.7522H18.4056C18.4964 9.25921 18.5418 9.74352 18.5418 10.2051C18.5418 11.8472 18.1975 13.3134 17.5089 14.6037C16.8203 15.8939 15.8384 16.9023 14.5633 17.6287C13.2882 18.3552 11.8258 18.7184 10.1761 18.7184C8.98803 18.7184 7.85671 18.4895 6.78214 18.0317C5.70757 17.5739 4.78057 16.9552 4.00113 16.1758C3.22169 15.3963 2.60306 14.4693 2.14523 13.3948C1.68741 12.3202 1.4585 11.1889 1.4585 10.0008C1.4585 8.81273 1.68741 7.68141 2.14523 6.60685C2.60306 5.53228 3.22169 4.60528 4.00113 3.82584C4.78057 3.0464 5.70757 2.42777 6.78214 1.96994C7.85671 1.51212 8.98803 1.2832 10.1761 1.2832C12.4463 1.2832 14.3949 2.04372 16.0219 3.56476L13.6495 5.84633C12.7187 4.94581 11.5609 4.49555 10.1761 4.49555C9.19991 4.49555 8.2975 4.74149 7.46888 5.23337C6.64025 5.72525 5.98378 6.39307 5.49947 7.23683C5.01516 8.08059 4.773 9.00192 4.773 10.0008C4.773 10.9997 5.01516 11.921 5.49947 12.7648C5.98378 13.6086 6.64025 14.2764 7.46888 14.7683C8.2975 15.2601 9.19991 15.5061 10.1761 15.5061C10.8345 15.5061 11.4399 15.4153 11.9923 15.2336C12.5447 15.052 12.9987 14.825 13.3544 14.5526C13.7101 14.2802 14.0203 13.9699 14.2852 13.6218C14.55 13.2737 14.7449 12.9445 14.8698 12.6343C14.9946 12.324 15.0798 12.0289 15.1252 11.7489H10.1761V8.7522Z" />
+                  </svg>
+                  <svg class="sign-in__twitter--logo" width="20" height="20" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M18.75 4.80963C18.1059 5.08291 17.4148 5.26824 16.6887 5.35098C17.4301 4.92586 17.9976 4.25154 18.2666 3.45051C17.5711 3.84421 16.8035 4.13008 15.9855 4.28505C15.3305 3.61597 14.3988 3.19922 13.3653 3.19922C11.3827 3.19922 9.77523 4.73844 9.77523 6.63576C9.77523 6.90485 9.80694 7.16767 9.86819 7.41899C6.88501 7.27552 4.23973 5.90699 2.46928 3.82745C2.1598 4.33426 1.98374 4.92479 1.98374 5.55516C1.98374 6.7478 2.618 7.80012 3.58033 8.41579C2.992 8.39695 2.43866 8.24198 1.95423 7.98439V8.02732C1.95423 9.69219 3.19213 11.0817 4.83353 11.3979C4.5328 11.4754 4.21568 11.5183 3.88761 11.5183C3.6558 11.5183 3.43161 11.4963 3.2118 11.4544C3.66889 12.8209 4.99429 13.8146 6.56463 13.8418C5.33657 14.7633 3.7881 15.3109 2.10624 15.3109C1.81646 15.3109 1.53103 15.2941 1.25 15.2638C2.83893 16.2407 4.7253 16.8103 6.75273 16.8103C13.3566 16.8103 16.9665 11.5728 16.9665 7.03053L16.9544 6.58552C17.6597 6.10382 18.2699 5.49862 18.75 4.80963Z" />
+                  </svg>
+
+                  <svg class="sign-in__in--logo" width="20" height="20" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z" />
+                     <path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z" />
+                     <path
+                        d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z" />
+                  </svg>
+               </div>
+            </div>
+         </div>
+      </div>
    </div>
-
+   <!-- <script src="js/dialog.js"></script> -->
+   <script src="js/slider.js"></script>
 </body>
 
 </html>
