@@ -97,7 +97,7 @@
 }
 
 .register-link {
-   background: url('../img/NavBar/Profile.png') 0 3px no-repeat;
+   background: url(../img/NavBar/Profile.png) 0 3px no-repeat;
    color: #424551;
    font-weight: 700;
    line-height: 1.6;
