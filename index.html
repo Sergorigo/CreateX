@@ -7,7 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
    <link rel="shortcut icon" href="favicon.ico">
-   <title>CreateX</title>
+   <title>Createx</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
                <ul class="menu__list">
                   <li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
                   <li class="menu__item"><a href="courses.html" class="menu__link">Courses</a></li>
-                  <li class="menu__item"><a href="events.html" class="menu__link">Events</a></li>
+                  <li class="menu__item"><a href="events.html" class="menu__link">Events</a>
                   <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
                   <li class="menu__item"><a href="contacts.html" class="menu__link">Contacts</a></li>
                </ul>
@@ -49,7 +49,14 @@
                <div class="enjoy-studying__content">
                   <div class="enjoy-studying__video video-enjoy-studying">
                      <a href="#" class="video-enjoy-studying__icon">
-                        <img src="img/enjoy-studying/hover.svg" alt="кнопка Play">
+                        <svg class="video-enjoy-studying__play-btn" width="52" height="52" viewBox="0 0 52 52"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <circle cx="26" cy="26" r="26" />
+                           <path
+                              d="M32.5 25.134C33.1667 25.5189 33.1667 26.4811 32.5 26.866L23.5 32.0622C22.8333 32.4471 22 31.966 22 31.1962L22 20.8038C22 20.034 22.8333 19.5529 23.5 19.9378L32.5 25.134Z"
+                              fill="white" />
+                        </svg>
+
                      </a>
                      <div class="video-enjoy-studying__text">Play showreel</div>
                   </div>
@@ -133,17 +140,17 @@
                      <span class="subtitle-title__string">Ready to learn?</span>
                      <h2 class="subtitle-title__title">Featured Courses</h2>
                   </div>
-                  <!-- Обсудить хавер бецветной кнопки -->
-                  <a href="#" class="featured-сourses__button colorless-button">
+                  <a href="courses.html" class="featured-сourses__button colorless-button">
                      View all courses
                   </a>
                </div>
                <div class="teachers-cards">
+                  <!-- Карточка с ментором -->
                   <div class="teachers-cards__column">
                      <div class="teachers-cards__items card">
                         <div class="card__row">
                            <div class="card__image">
-                              <img src="img/featured-courses/Jerome_Bell.png" alt="Фото преподавателя">
+                              <img src="img/featured-courses/Jerome_Bell.webp" alt="Фото преподавателя">
                            </div>
                            <div class="card__body">
                               <span class="card__marked-word green-word">Marketing</span>
@@ -154,11 +161,12 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Карточка с ментором -->
                   <div class="teachers-cards__column">
                      <div class="teachers-cards__items card">
                         <div class="card__row">
                            <div class="card__image">
-                              <img src="img/featured-courses/Leslie_Alexander_Li.png" alt="Фото преподавателя">
+                              <img src="img/featured-courses/Leslie_Alexander_Li.webp" alt="Фото преподавателя">
                            </div>
                            <div class="card__body">
                               <span class="card__marked-word orange-word">HR & Recruting</span>
@@ -169,11 +177,12 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Карточка с ментором -->
                   <div class="teachers-cards__column">
                      <div class="teachers-cards__items card">
                         <div class="card__row">
                            <div class="card__image">
-                              <img src="img/featured-courses/Dianne_Russell.png" alt="Фото преподавателя">
+                              <img src="img/featured-courses/Dianne_Russell.webp" alt="Фото преподавателя">
                            </div>
                            <div class="card__body">
                               <span class="card__marked-word blue-word">Management</span>
@@ -184,11 +193,12 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Карточка с ментором -->
                   <div class="teachers-cards__column">
                      <div class="teachers-cards__items card">
                         <div class="card__row">
                            <div class="card__image">
-                              <img src="img/featured-courses/Marvin_McKinney.png" alt="Фото преподавателя">
+                              <img src="img/featured-courses/Marvin_McKinney.webp" alt="Фото преподавателя">
                            </div>
                            <div class="card__body">
                               <span class="card__marked-word blue-word">Managment</span>
@@ -199,11 +209,12 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Карточка с ментором -->
                   <div class="teachers-cards__column">
                      <div class="teachers-cards__items card">
                         <div class="card__row">
                            <div class="card__image">
-                              <img src="img/featured-courses/Kristin_Watson.png" alt="Фото преподавателя">
+                              <img src="img/featured-courses/Kristin_Watson.webp" alt="Фото преподавателя">
                            </div>
                            <div class="card__body">
                               <span class="card__marked-word green-word">Marketing</span>
@@ -214,11 +225,12 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Карточка с ментором -->
                   <div class="teachers-cards__column">
                      <div class="teachers-cards__items card">
                         <div class="card__row">
                            <div class="card__image">
-                              <img src="img/featured-courses/Guy_Hawkins.png" alt="Фото преподавателя">
+                              <img src="img/featured-courses/Guy_Hawkins.webp" alt="Фото преподавателя">
                            </div>
                            <div class="card__body">
                               <span class="card__marked-word pink-word">Design</span>
@@ -356,7 +368,7 @@
                      </div>
                      <!-- блок с кнопкой -->
                      <div class="list-events__button-block">
-                        <a href="#" class="list-events__button colorless-button">
+                        <a href="events.html" class="list-events__button colorless-button">
                            View more
                         </a>
                      </div>
@@ -388,7 +400,7 @@
                      </div>
                      <!-- блок с кнопкой -->
                      <div class="list-events__button-block">
-                        <a href="#" class="list-events__button colorless-button">
+                        <a href="events.html" class="list-events__button colorless-button">
                            View more
                         </a>
                      </div>
@@ -420,7 +432,7 @@
                      </div>
                      <!-- блок с кнопкой -->
                      <div class="list-events__button-block">
-                        <a href="#" class="list-events__button colorless-button">
+                        <a href="events.html" class="list-events__button colorless-button">
                            View more
                         </a>
                      </div>
@@ -431,7 +443,7 @@
                   <span class="quastion__want-more">Do you want more?</span>
 
                   <div class="quastion__button">
-                     <a href="#" class="quastion__link button">Explore all events</a>
+                     <a href="events.html" class="quastion__link button">Explore all events</a>
                   </div>
 
                </div>
@@ -460,9 +472,9 @@
                      <img src="img/createx-certificate/createx-certificate_icons/National_Health_Logo.svg"
                         alt="логотип">
                   </div>
-                  <div class="createx-certificate__general-image">
-                     <img src="img/createx-certificate/ceкtificate.png" alt="Сертификат">
-                  </div>
+               </div>
+               <div class="createx-certificate__general-image">
+                  <img src="img/createx-certificate/ceкtificate.png" alt="Сертификат">
                </div>
             </div>
          </div>
@@ -964,19 +976,19 @@
                         <h4 class="footer__subtitle">COURSES</h4>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Marketing</a>
+                        <a href="courses.html" class="footer__link">Marketing</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Management</a>
+                        <a href="courses.html" class="footer__link">Management</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">HR & Recruting</a>
+                        <a href="courses.html" class="footer__link">HR & Recruting</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Design</a>
+                        <a href="courses.html" class="footer__link">Design</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Development</a>
+                        <a href="courses.html" class="footer__link">Development</a>
                      </li>
                   </ul>
                </div>
@@ -1034,12 +1046,12 @@
                <form class="sign-in__register" action="#">
 
                   <div class="sign-in__email">
-                     <label class="sign-in__label-email" for="#">Email</label>
+                     <label class="sign-in__label-email">Email</label>
                      <input class="sign-in__input-email" placeholder="Your working email" type="email">
                   </div>
 
                   <div class="sign-in__pass">
-                     <label class="sign-in__label-pass" for="#">Password</label>
+                     <label class="sign-in__label-pass">Password</label>
                      <input class="sign-in__input-pass" type="password" placeholder="Your password" autocomplete="off">
                      <img class="sign-in__eye-pass" src="img/sign_in/logo/eye.svg" alt="eye">
                   </div>

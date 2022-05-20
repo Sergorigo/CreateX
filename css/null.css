@@ -8,6 +8,14 @@
 	border: 0;
 }
 
+input,
+form,
+select,
+option,
+output:focus {
+	outline: none;
+}
+
 li {
 	list-style: none;
 }
