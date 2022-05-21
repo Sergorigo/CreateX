@@ -480,7 +480,7 @@ body {
 
 @media (max-width: 991.98px) {
    .number-list {
-      column-gap: 20px;
+      column-gap: 0px;
       margin: 109px 0px 53px 0px;
    }
 }
@@ -498,7 +498,7 @@ body {
 
 @media (max-width: 991.98px) {
    .number-list__item {
-      font-size: 32px;
+      font-size: 36px;
       column-gap: 5px;
    }
 }
@@ -515,7 +515,6 @@ body {
 
 @media (max-width: 991.98px) {
    .number-list__text {
-      font-size: 14px;
       line-height: 1.3;
    }
 }
@@ -527,6 +526,12 @@ body {
    background-color: #FF3F3A;
    align-items: center;
    align-self: center;
+}
+
+@media (max-width: 991.98px) {
+   .number-list__orange-point {
+      margin: 0px 20px 0px 0px;
+   }
 }
 
 /* Блок с фото девушки в наушниках================================================== */
@@ -590,7 +595,6 @@ body {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column-reverse;
-      row-gap: 30px;
       align-items: center;
    }
 }
@@ -615,7 +619,7 @@ body {
 
 @media (max-width: 1087.98px) {
    .who-we-are__block-text {
-      padding: 0px 0px 0px 0px;
+      padding: 0px 0px 20px 0px;
       display: block;
    }
 }
@@ -655,7 +659,13 @@ body {
 .mark-list {
    display: flex;
    flex-direction: column;
+}
 
+@media (max-width: 991.98px) {
+   .mark-list {
+      font-size: 18px;
+      letter-spacing: 0.5px;
+   }
 }
 
 .mark-list__item {
@@ -671,6 +681,7 @@ body {
 }
 
 .who-we-are__button {}
+
 
 /* Блок с карточками преподавателей=============================================== */
 .featured-сourses {
@@ -1488,40 +1499,14 @@ body {
    visibility: visible;
 }
 
-.fb-link {
-   background: url('../img/best-tutors/card-icons/facebookS.svg') 0px 0px no-repeat;
-   width: 20px;
-   height: 20px;
-
-
+[class*="fix__img"] {
+   fill: #B3B7BC;
 }
 
-.fb-link:hover {
-   background: url('../img/best-tutors/card-icons/facebook.svg') 0px 0px no-repeat;
-
+[class*="fix__img"]:hover {
+   fill: #FFF;
 }
 
-.inst-link {
-   background: url('../img/best-tutors/card-icons/instS.svg') 0px 1px no-repeat;
-   width: 20px;
-   height: 20px;
-}
-
-.inst-link:hover {
-   background: url('../img/best-tutors/card-icons/inst.svg') 0px 1px no-repeat;
-}
-
-.in-link {
-   background: url('../img/best-tutors/card-icons/inS.svg') 0px 0px no-repeat;
-   width: 20px;
-   height: 20px;
-}
-
-.in-link:hover {
-   background: url('../img/best-tutors/card-icons/in.svg') 0px 0px no-repeat;
-}
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .body-slider__name {
    font-weight: 700;
    font-size: 20px;
@@ -2248,65 +2233,6 @@ body {
    }
 }
 
-.sotial-media__icon-facebook {
-   width: 24px;
-   height: 24px;
-   background: url('../img/footer/sotial-media-logo/facebook_dark.svg') 0 0 no-repeat;
-}
-
-.sotial-media__icon-facebook:hover {
-   background: url('../img/footer/sotial-media-logo/facebook_white.svg') 0 0 no-repeat;
-}
-
-.sotial-media__icon-twitter {
-   width: 24px;
-   height: 24px;
-   background: url('../img/footer/sotial-media-logo/twitter_dark.svg') 0 0 no-repeat;
-}
-
-.sotial-media__icon-twitter:hover {
-   background: url('../img/footer/sotial-media-logo/twitter_white.svg') 0 0 no-repeat;
-}
-
-.sotial-media__icon-youtube {
-   width: 24px;
-   height: 24px;
-   background: url('../img/footer/sotial-media-logo/YouTube_dark.svg') 0 0 no-repeat;
-}
-
-.sotial-media__icon-youtube:hover {
-   background: url('../img/footer/sotial-media-logo/YouTube_white.svg') 0 0 no-repeat;
-}
-
-.sotial-media__icon-telegram {
-   width: 24px;
-   height: 24px;
-   background: url('../img/footer/sotial-media-logo/telegram_dark.svg') 0 0 no-repeat;
-}
-
-.sotial-media__icon-telegram:hover {
-   background: url('../img/footer/sotial-media-logo/telegram-white.svg') 0 0 no-repeat;
-}
-
-.sotial-media__icon-instagram {
-   width: 24px;
-   height: 24px;
-   background: url('../img/footer/sotial-media-logo/instagram_dark.svg') 0 0 no-repeat;
-}
-
-.sotial-media__icon-instagram:hover {
-   background: url('../img/footer/sotial-media-logo/instagram_white.svg') 0 0 no-repeat;
-}
-
-.sotial-media__icon-in {
-   width: 24px;
-   height: 24px;
-   background: url('../img/footer/sotial-media-logo/in_dark.svg') 0 0 no-repeat;
-}
-
-.sotial-media__icon-in:hover {
-   background: url('../img/footer/sotial-media-logo/in_white.svg') 0 0 no-repeat;
-}
 
 .footer__site-map {
    flex: 0 1 15%;
