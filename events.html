@@ -49,35 +49,66 @@
                      <!-- выпадающий список 1 -->
                      <div class="long-events-list__item-box">
                         <span class="long-events-list__text">Event category</span>
-                        <input type="text" class="long-events-list__form">
+                        <!-- <input type="text" class="long-events-list__form"> -->
+                        <select class="long-events-list__form" name="categories" id="drop-list">
+                           <option value="1">All themes</option>
+                           <option value="2">Marketing</option>
+                           <option value="3">Development</option>
+                           <option value="4">Design</option>
+                           <option value="5">HR & Recruting</option>
+                           <option value="6">Management</option>
+                        </select>
                      </div>
                      <!-- выпадающий список 2 -->
                      <div class="long-events-list__item-box">
                         <span class="long-events-list__text">Sort by</span>
-                        <input type="text" class="long-events-list__form">
+                        <!-- <input type="text" class="long-events-list__form"> -->
+                        <select class="long-events-list__form" name="categories" id="drop-list">
+                           <option value="1">Newest</option>
+                           <option value="2">Date</option>
+                           <option value="3">Name</option>
+                           <option value="4">Mentors</option>
+                        </select>
                      </div>
                      <!-- переключение списка -->
                      <div class="long-events-list__item-box">
                         <span class="long-events-list__text">Show</span>
-                        <input class="long-events-list__form-clicker" type="text" value="1">
+                        <input class="long-events-list__form-clicker" type="number" value="9">
                         <span class="long-events-list__clicker-text">events per page</span>
                      </div>
                      <!-- форма для поиска -->
                      <div class="long-events-list__item-box">
-                        <input class="long-events-list__form-search" type="text" value="   Search event...">
+                        <input class="long-events-list__form-search" type="text" placeholder="Search event...">
+                        <svg class="long-events-list__magnify" width="16" height="16" viewBox="0 0 16 16"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M7.24992 2.16634C4.44247 2.16634 2.16659 4.44223 2.16659 7.24967C2.16659 10.0571 4.44247 12.333 7.24992 12.333C8.65251 12.333 9.92136 11.7658 10.8418 10.8467C11.7639 9.92589 12.3333 8.6549 12.3333 7.24967C12.3333 4.44223 10.0574 2.16634 7.24992 2.16634ZM0.833252 7.24967C0.833252 3.70585 3.70609 0.833008 7.24992 0.833008C10.7937 0.833008 13.6666 3.70585 13.6666 7.24967C13.6666 8.78248 13.1285 10.1905 12.2319 11.2939L14.9709 14.0278C15.2315 14.2879 15.2319 14.7101 14.9718 14.9706C14.7116 15.2312 14.2895 15.2316 14.0289 14.9715L11.2886 12.2362C10.1861 13.13 8.78014 13.6663 7.24992 13.6663C3.70609 13.6663 0.833252 10.7935 0.833252 7.24967Z" />
+                        </svg>
                      </div>
-                     <div class="long-events-list__switcher-box">
-                        <a href="#" class="long-events-list__switcher-link-list">
-                           <img class="long-events-list__switcher" src="img/long_events_list/switcher_list_dark.svg"
-                              alt="кнопка вид списком">
-                        </a>
-                     </div>
-                     <div class="long-events-list__switcher-box">
-                        <a href="#" class="long-events-list__switcher-link-grid">
-                           <img class="long-events-list__switcher" src="img/long_events_list/switcher_grid_dark.svg"
-                              alt="кнопка вид сеткой">
-                        </a>
-                     </div>
+                     <!-- кнопка вид списком -->
+                     <a href="#" class="long-events-list__switcher-link-list">
+                        <svg class="long-events-list__list-picture" tabindex="1" width="20" height="20"
+                           viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M0.833252 2.91634C0.833252 1.76575 1.76599 0.833008 2.91659 0.833008H17.0833C18.2338 0.833008 19.1666 1.76575 19.1666 2.91634V7.08301C19.1666 8.2336 18.2338 9.16634 17.0833 9.16634H2.91658C1.76599 9.16634 0.833252 8.2336 0.833252 7.08301V2.91634ZM2.91659 2.49967C2.68647 2.49967 2.49992 2.68622 2.49992 2.91634V7.08301C2.49992 7.31313 2.68647 7.49967 2.91658 7.49967H17.0833C17.3134 7.49967 17.4999 7.31313 17.4999 7.08301V2.91634C17.4999 2.68622 17.3134 2.49967 17.0833 2.49967H2.91659Z" />
+                           <path
+                              d="M0.833252 12.9163C0.833252 11.7657 1.76599 10.833 2.91659 10.833H17.0833C18.2338 10.833 19.1666 11.7657 19.1666 12.9163V17.083C19.1666 18.2336 18.2338 19.1663 17.0833 19.1663H2.91658C1.76599 19.1663 0.833252 18.2336 0.833252 17.083V12.9163ZM2.91659 12.4997C2.68647 12.4997 2.49992 12.6862 2.49992 12.9163V17.083C2.49992 17.3131 2.68647 17.4997 2.91658 17.4997H17.0833C17.3134 17.4997 17.4999 17.3131 17.4999 17.083V12.9163C17.4999 12.6862 17.3134 12.4997 17.0833 12.4997H2.91659Z" />
+                        </svg>
+                     </a>
+                     <!-- кнопка вид сеткой -->
+                     <a href="#" class="long-events-list__switcher-link-grid">
+                        <svg class="long-events-list__grid-picture" tabindex="2" width="20" height="20"
+                           viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M0.833374 2.91634C0.833374 1.76575 1.76611 0.833008 2.91671 0.833008H7.08337C8.23397 0.833008 9.16671 1.76575 9.16671 2.91634V7.08301C9.16671 8.2336 8.23397 9.16634 7.08337 9.16634H2.91671C1.76611 9.16634 0.833374 8.2336 0.833374 7.08301V2.91634ZM2.91671 2.49967C2.68659 2.49967 2.50004 2.68622 2.50004 2.91634V7.08301C2.50004 7.31313 2.68659 7.49967 2.91671 7.49967H7.08337C7.31349 7.49967 7.50004 7.31313 7.50004 7.08301V2.91634C7.50004 2.68622 7.31349 2.49967 7.08337 2.49967H2.91671Z" />
+                           <path
+                              d="M0.833374 12.9163C0.833374 11.7657 1.76611 10.833 2.91671 10.833H7.08337C8.23397 10.833 9.16671 11.7657 9.16671 12.9163V17.083C9.16671 18.2336 8.23397 19.1663 7.08337 19.1663H2.91671C1.76611 19.1663 0.833374 18.2336 0.833374 17.083V12.9163ZM2.91671 12.4997C2.68659 12.4997 2.50004 12.6862 2.50004 12.9163V17.083C2.50004 17.3131 2.68659 17.4997 2.91671 17.4997H7.08337C7.31349 17.4997 7.50004 17.3131 7.50004 17.083V12.9163C7.50004 12.6862 7.31349 12.4997 7.08337 12.4997H2.91671Z" />
+                           <path
+                              d="M10.8334 2.91634C10.8334 1.76575 11.7661 0.833008 12.9167 0.833008H17.0834C18.234 0.833008 19.1667 1.76575 19.1667 2.91634V7.08301C19.1667 8.2336 18.234 9.16634 17.0834 9.16634H12.9167C11.7661 9.16634 10.8334 8.2336 10.8334 7.08301V2.91634ZM12.9167 2.49967C12.6866 2.49967 12.5 2.68622 12.5 2.91634V7.08301C12.5 7.31313 12.6866 7.49967 12.9167 7.49967H17.0834C17.3135 7.49967 17.5 7.31313 17.5 7.08301V2.91634C17.5 2.68622 17.3135 2.49967 17.0834 2.49967H12.9167Z" />
+                           <path
+                              d="M10.8334 12.9163C10.8334 11.7657 11.7661 10.833 12.9167 10.833H17.0834C18.234 10.833 19.1667 11.7657 19.1667 12.9163V17.083C19.1667 18.2336 18.234 19.1663 17.0834 19.1663H12.9167C11.7661 19.1663 10.8334 18.2336 10.8334 17.083V12.9163ZM12.9167 12.4997C12.6866 12.4997 12.5 12.6862 12.5 12.9163V17.083C12.5 17.3131 12.6866 17.4997 12.9167 17.4997H17.0834C17.3135 17.4997 17.5 17.3131 17.5 17.083V12.9163C17.5 12.6862 17.3135 12.4997 17.0834 12.4997H12.9167Z" />
+                        </svg>
+                     </a>
                   </div>
                   <!-- блок с карточками  -->
                   <div class="long-events-list__block list-events">
@@ -369,22 +400,23 @@
                         </div>
                      </div>
                   </div>
+                  <!-- цифры страниц  -->
                   <div class="list-events__number-block">
                      <div class="list-events__number-block-item">
-                        <a class="list-events__switch-link" href="#">1</a>
+                        <a tabindex="6" class="list-events__switch-link">1</a>
                      </div>
                      <div class="list-events__number-block-item">
-                        <a class="list-events__switch-link" href="#">2</a>
+                        <a tabindex="7" class="list-events__switch-link">2</a>
                      </div>
                      <div class="list-events__number-block-item">
-                        <a class="list-events__switch-link" href="#">3</a>
+                        <a tabindex="8" class="list-events__switch-link">3</a>
                      </div>
                      <div class="list-events__number-block-item">
-                        <a class="list-events__switch-link" href="#">4</a>
+                        <a tabindex="9" class="list-events__switch-link">4</a>
                      </div>
 
                      <div class="list-events__number-block-item">
-                        <a class="list-events__arrow" href="#">
+                        <a class="list-events__arrow">
                            <!-- <img src="img/long_events_list/footer_arrow.svg" alt="указательная стрелка"> -->
                         </a>
                      </div>
@@ -420,19 +452,61 @@
                      <img src="img/footer/footer_logo.svg" alt="логотип" class="footer__logo">
                   </div>
                   <p class="footer__text">
-                     Createx Online School is a leader in online studying. We have lots of courses and programs from
-                     the
-                     main market experts. We provide relevant approaches to online learning, internships and
-                     employment
+                     Createx Online School is a leader in online studying. We have lots of courses and programs from the
+                     main market experts. We provide relevant approaches to online learning, internships and employment
                      in the largest companies in the country.
                   </p>
                   <div class="sotial-media">
-                     <div class="sotial-media__icon-facebook"></div>
-                     <div class="sotial-media__icon-twitter"></div>
-                     <div class="sotial-media__icon-youtube"></div>
-                     <div class="sotial-media__icon-telegram"></div>
-                     <div class="sotial-media__icon-instagram"></div>
-                     <div class="sotial-media__icon-in"></div>
+                     <div class="sotial-media__icon-facebook fix">
+                        <svg class="fix__img" width="24" height="24" viewBox="0 0 10 20"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M9.63586 0.837799L7.32148 0.833984C4.72134 0.833984 3.04102 2.60489 3.04102 5.34584V7.42611H0.714012C0.512931 7.42611 0.350098 7.59357 0.350098 7.80013V10.8142C0.350098 11.0208 0.513117 11.188 0.714012 11.188H3.04102V18.7935C3.04102 19 3.20386 19.1673 3.40494 19.1673H6.44103C6.64211 19.1673 6.80494 18.9999 6.80494 18.7935V11.188H9.52576C9.72684 11.188 9.88967 11.0208 9.88967 10.8142L9.89079 7.80013C9.89079 7.70095 9.85235 7.60597 9.78421 7.53578C9.71607 7.46559 9.62324 7.42611 9.52669 7.42611H6.80494V5.66264C6.80494 4.81505 7.00157 4.38476 8.07641 4.38476L9.63549 4.38419C9.83639 4.38419 9.99922 4.21673 9.99922 4.01037V1.21163C9.99922 1.00545 9.83657 0.83818 9.63586 0.837799Z" />
+                        </svg>
+                     </div>
+                     <div class="sotial-media__icon-twitter fix">
+                        <svg class="fix__img" width="24" height="24" viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M22.5 5.77233C21.7271 6.10027 20.8978 6.32267 20.0264 6.42196C20.9161 5.91181 21.5972 5.10263 21.92 4.1414C21.0854 4.61383 20.1642 4.95688 19.1826 5.14285C18.3966 4.33994 17.2785 3.83984 16.0384 3.83984C13.6593 3.83984 11.7303 5.68691 11.7303 7.9637C11.7303 8.2866 11.7683 8.60199 11.8418 8.90357C8.26201 8.73141 5.08768 7.08917 2.96314 4.59372C2.59176 5.20189 2.38049 5.91053 2.38049 6.66697C2.38049 8.09814 3.14161 9.36093 4.2964 10.0997C3.5904 10.0771 2.92639 9.89116 2.34508 9.58205V9.63357C2.34508 11.6314 3.83056 13.2988 5.80024 13.6783C5.43936 13.7713 5.05882 13.8228 4.66514 13.8228C4.38696 13.8228 4.11794 13.7964 3.85417 13.7461C4.40267 15.3859 5.99315 16.5783 7.87756 16.611C6.40388 17.7167 4.54573 18.3739 2.52749 18.3739C2.17976 18.3739 1.83724 18.3537 1.5 18.3173C3.40671 19.4896 5.67036 20.1732 8.10327 20.1732C16.028 20.1732 20.3597 13.8881 20.3597 8.43741L20.3453 7.90341C21.1917 7.32537 21.9239 6.59912 22.5 5.77233Z" />
+                        </svg>
+
+                     </div>
+                     <div class="sotial-media__icon-youtube fix">
+                        <svg class="fix__img" width="24" height="24" viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M21.3903 4.11358C22.4182 4.39044 23.2288 5.20086 23.5055 6.22899C24.0197 8.10691 23.9999 12.0213 23.9999 12.0213C23.9999 12.0213 23.9999 15.9158 23.5057 17.7939C23.2288 18.8218 22.4184 19.6324 21.3903 19.9091C19.5122 20.4035 12 20.4035 12 20.4035C12 20.4035 4.50731 20.4035 2.60961 19.8895C1.58148 19.6127 0.771054 18.802 0.4942 17.7741C0 15.9158 0 12.0015 0 12.0015C0 12.0015 0 8.10691 0.4942 6.22899C0.770871 5.20104 1.60125 4.37066 2.60943 4.09399C4.48753 3.59961 11.9998 3.59961 11.9998 3.59961C11.9998 3.59961 19.5122 3.59961 21.3903 4.11358ZM15.8549 12.0016L9.60788 15.5996V8.40355L15.8549 12.0016Z" />
+                        </svg>
+                     </div>
+                     <div class="sotial-media__icon-telegram fix">
+                        <svg class="fix__img" width="24" height="24" viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M9.63262 15.1813L9.2687 20.7653C9.78937 20.7653 10.0149 20.5213 10.2853 20.2283L12.7264 17.6833L17.7847 21.7243C18.7124 22.2883 19.366 21.9913 19.6163 20.7933L22.9365 3.8214L22.9374 3.8204C23.2317 2.3244 22.4415 1.73941 21.5377 2.1064L2.02135 10.2574C0.689406 10.8214 0.709573 11.6314 1.79493 11.9984L6.78447 13.6913L18.3742 5.78039C18.9196 5.38639 19.4155 5.60439 19.0076 5.99839L9.63262 15.1813Z" />
+                        </svg>
+                     </div>
+                     <div class="sotial-media__icon-instagram fix">
+                        <svg class="fix__img" width="24" height="24" viewBox="0 0 18 18"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M17.3169 5.56606C17.2778 4.6805 17.1346 4.07168 16.9295 3.54413C16.7178 2.98415 16.3923 2.4828 15.9657 2.06603C15.5489 1.64277 15.0443 1.31388 14.4908 1.10555C13.9602 0.900411 13.3545 0.757205 12.469 0.71816C11.5768 0.675809 11.2936 0.666016 9.03075 0.666016C6.76794 0.666016 6.48471 0.675809 5.59584 0.714853C4.71028 0.753898 4.10146 0.897231 3.57404 1.10225C3.01393 1.31388 2.51258 1.63946 2.09581 2.06603C1.67255 2.4828 1.34379 2.98746 1.13534 3.54095C0.930196 4.07168 0.78699 4.67719 0.747945 5.56275C0.705594 6.45493 0.695801 6.73816 0.695801 9.00098C0.695801 11.2638 0.705594 11.547 0.744638 12.4359C0.783683 13.3215 0.927016 13.9303 1.13216 14.4578C1.34379 15.0178 1.67255 15.5191 2.09581 15.9359C2.51258 16.3592 3.01724 16.6881 3.57073 16.8964C4.10146 17.1015 4.70697 17.2447 5.59266 17.2838C6.4814 17.323 6.76476 17.3326 9.02757 17.3326C11.2904 17.3326 11.5736 17.323 12.4625 17.2838C13.348 17.2447 13.9569 17.1015 14.4843 16.8964C15.6044 16.4633 16.4899 15.5778 16.923 14.4578C17.128 13.9271 17.2713 13.3215 17.3104 12.4359C17.3494 11.547 17.3592 11.2638 17.3592 9.00098C17.3592 6.73816 17.3559 6.45493 17.3169 5.56606ZM15.816 12.3708C15.7801 13.1847 15.6434 13.6243 15.5295 13.9173C15.2494 14.6434 14.6731 15.2196 13.9471 15.4997C13.654 15.6136 13.2113 15.7504 12.4005 15.7861C11.5215 15.8253 11.2578 15.8349 9.03406 15.8349C6.81029 15.8349 6.54334 15.8253 5.66744 15.7861C4.85348 15.7504 4.41394 15.6136 4.12092 15.4997C3.7596 15.3661 3.43071 15.1545 3.16375 14.8778C2.88701 14.6075 2.67538 14.2819 2.54184 13.9206C2.42788 13.6276 2.29116 13.1847 2.25542 12.3741C2.21625 11.495 2.20659 11.2312 2.20659 9.00746C2.20659 6.7837 2.21625 6.51674 2.25542 5.64097C2.29116 4.82701 2.42788 4.38747 2.54184 4.09444C2.67538 3.733 2.88701 3.40423 3.16706 3.13715C3.43719 2.8604 3.76278 2.64877 4.12423 2.51536C4.41725 2.40141 4.8601 2.26469 5.67075 2.22882C6.54983 2.18978 6.8136 2.17998 9.03724 2.17998C11.2643 2.17998 11.528 2.18978 12.4039 2.22882C13.2178 2.26469 13.6573 2.40141 13.9504 2.51536C14.3117 2.64877 14.6406 2.8604 14.9075 3.13715C15.1843 3.40741 15.3959 3.733 15.5295 4.09444C15.6434 4.38747 15.7801 4.83019 15.816 5.64097C15.855 6.52005 15.8648 6.7837 15.8648 9.00746C15.8648 11.2312 15.855 11.4917 15.816 12.3708Z" />
+                           <path
+                              d="M9.03075 4.71954C6.66708 4.71954 4.74931 6.63719 4.74931 9.00098C4.74931 11.3648 6.66708 13.2824 9.03075 13.2824C11.3945 13.2824 13.3122 11.3648 13.3122 9.00098C13.3122 6.63719 11.3945 4.71954 9.03075 4.71954ZM9.03075 11.7782C7.49732 11.7782 6.25349 10.5345 6.25349 9.00098C6.25349 7.46743 7.49732 6.22372 9.03075 6.22372C10.5643 6.22372 11.808 7.46743 11.808 9.00098C11.808 10.5345 10.5643 11.7782 9.03075 11.7782Z" />
+                           <path
+                              d="M14.4811 4.55027C14.4811 5.10223 14.0336 5.54979 13.4815 5.54979C12.9295 5.54979 12.482 5.10223 12.482 4.55027C12.482 3.99817 12.9295 3.55074 13.4815 3.55074C14.0336 3.55074 14.4811 3.99817 14.4811 4.55027Z" />
+                        </svg>
+                     </div>
+                     <div class="sotial-media__icon-in fix">
+                        <svg class="fix__img" width="24" height="24" viewBox="0 0 18 18"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M17.329 17.3327L17.3332 17.332V11.2195C17.3332 8.22921 16.6894 5.92574 13.1936 5.92574C11.513 5.92574 10.3853 6.84796 9.92483 7.72227H9.87622V6.2049H6.56163V17.332H10.013V11.8223C10.013 10.3716 10.288 8.9688 12.0846 8.9688C13.8547 8.9688 13.8811 10.6244 13.8811 11.9153V17.3327H17.329Z" />
+                           <path d="M0.9415 6.2056H4.39706V17.3327H0.9415V6.2056Z" />
+                           <path
+                              d="M2.66789 0.666016C1.56303 0.666016 0.666504 1.56254 0.666504 2.6674C0.666504 3.77227 1.56303 4.68754 2.66789 4.68754C3.77275 4.68754 4.66928 3.77227 4.66928 2.6674C4.66859 1.56254 3.77206 0.666016 2.66789 0.666016Z" />
+                        </svg>
+                     </div>
                   </div>
                </div>
                <!-- колонка навигации №1 -->
@@ -442,19 +516,19 @@
                         <h4 class="footer__subtitle">SITE MAP</h4>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">About Us</a>
+                        <a href="about.html" class="footer__link">About Us</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Courses</a>
+                        <a href="courses.html" class="footer__link">Courses</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Events</a>
+                        <a href="events.html" class="footer__link">Events</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Blog</a>
+                        <a href="blog.html" class="footer__link">Blog</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Contacts</a>
+                        <a href="contacts.html" class="footer__link">Contacts</a>
                      </li>
                   </ul>
                </div>
@@ -465,19 +539,19 @@
                         <h4 class="footer__subtitle">COURSES</h4>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Marketing</a>
+                        <a href="courses.html" class="footer__link">Marketing</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Management</a>
+                        <a href="courses.html" class="footer__link">Management</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">HR & Recruting</a>
+                        <a href="courses.html" class="footer__link">HR & Recruting</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Design</a>
+                        <a href="courses.html" class="footer__link">Design</a>
                      </li>
                      <li class="footer__item">
-                        <a href="#" class="footer__link">Development</a>
+                        <a href="courses.html" class="footer__link">Development</a>
                      </li>
                   </ul>
                </div>
@@ -496,8 +570,11 @@
                <!-- блок для ввода имейла  -->
                <div class="footer__newsletter">
                   <h4 class="footer__subtitle-input">SIGN UP TO OUR NEWSLETTER</h4>
-                  <input class="footer__email-address" type="email">
 
+                  <form class="footer__email-address">
+                     <a href="#" class="adress-link"><img src="img/footer/input/right_arrow.svg" alt="arrow"></a>
+                     <input class="footer__address-email" placeholder="Email address" type="email">
+                  </form>
                   <p class="footer__footnode-input">
                      *Subscribe to our newsletter to receive communications and early
                      updates from Createx SEO Agency.
