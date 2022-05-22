@@ -1,6 +1,7 @@
 // создаю группу переменных
 // переменная элемента bullet
 let bullets = document.getElementsByClassName('bullet-navigation__item');
+let bulletsArea = document.getElementsByClassName('bullet-navigation')[0];
 // переменная карточки слайда
 let slides = document.getElementsByClassName('block-feedback__testimonal-container');
 // переменные для кнопок переключения слайдов
@@ -33,14 +34,24 @@ showSlides(slideIndex);
 function plusSlides(n) {
    // Вызываю функцию showSlides и добавляю к ней параметр n
    showSlides(slideIndex += n);
-   setTimeout = 800;
 }
-
-// Осталось повесить на кнопки для перелистывания обработчики событий
+// Создаю еще одну функцию, для переключения слайдов по клику на буллет
+function currentSlide(n) {
+   showSlides(slideIndex = n);
+}
+// Осталось повесить на кнопки и буллеты обработчики событий
 prevBtn.onclick = function () {
    plusSlides(-1);
 }
 nextBtn.onclick = function () {
    plusSlides(1);
 }
-
+bulletsArea.onclick = function (e) {
+   // создаю цикл, который будет перебирать элементы массива bullets
+   for (let i = 0; i < bullets.length + 1; i++) {
+      // Прописываю условный оператор для функции е, который будет выполняться только если значение класса по клику будет равно 'bullet-navigation__item';
+      if (e.target.classList.contains('bullet-navigation__item') && e.target == bullets[i - 1]) { // Добавляю параметр проверки
+         currentSlide(i);
+      }
+   }
+}
