@@ -18,7 +18,6 @@
                <img src="img/NavBar/logo.png" alt="Логотип">
             </a>
             <div class="header__menu menu">
-
                <nav class="menu__body">
                   <ul class="menu__list">
                      <li class="menu__item">
@@ -46,7 +45,8 @@
                </a>
             </div>
             <div class="menu__burger">
-               <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+               <svg class="menu__burger-logo" width="24" height="24" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                      d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z" />
                   <path
@@ -108,7 +108,7 @@
                         </svg>
                      </div>
                      <!-- кнопка вид списком -->
-                     <a href="#" class="long-events-list__switcher-link-list">
+                     <a href="#" tabindex="1" class="long-events-list__switcher-link-list">
                         <svg class="long-events-list__list-picture" tabindex="1" width="20" height="20"
                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                            <path
@@ -118,7 +118,7 @@
                         </svg>
                      </a>
                      <!-- кнопка вид сеткой -->
-                     <a href="#" class="long-events-list__switcher-link-grid">
+                     <a href="#" tabindex="2" class="long-events-list__switcher-link-grid">
                         <svg class="long-events-list__grid-picture" tabindex="2" width="20" height="20"
                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                            <path
@@ -624,6 +624,7 @@
          </div>
       </footer>
    </div>
+   <script src="js/menu.js"></script>
 </body>
 <!-- Адаптирована -->
 

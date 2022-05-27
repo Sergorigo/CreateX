@@ -17,22 +17,44 @@
             <a href="index.html" class="header__logo">
                <img src="img/NavBar/logo.png" alt="Логотип">
             </a>
-            <nav class="header__menu menu">
-               <ul class="menu__list">
-                  <li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
-                  <li class="menu__item"><a href="courses.html" class="menu__link">Courses</a></li>
-                  <li class="menu__item"><a href="events.html" class="menu__link">Events</a></li>
-                  <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
-                  <li class="menu__item"><a href="contacts.html" class="menu__link">Contacts</a></li>
-               </ul>
-            </nav>
+            <div class="header__menu menu">
+               <nav class="menu__body">
+                  <ul class="menu__list">
+                     <li class="menu__item">
+                        <a href="about.html" class="menu__link">
+                           About Us
+                        </a>
+                     </li>
+                     <li class="menu__item"><a href="courses.html" class="menu__link">Courses</a></li>
+                     <li class="menu__item"><a href="events.html" class="menu__link">Events</a></li>
+                     <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                     <li class="menu__item"><a href="contacts.html" class="menu__link">Contacts</a></li>
+                  </ul>
+               </nav>
+            </div>
+
+            <a href="#" class="button test__button">
+               Get consultation
+            </a>
             <div class="header__buttons">
-               <a href="#" class="button">
-                  Get consultation
+               <a href="#in" class="log-link dialog-link">
+                  Log in
                </a>
-               <a href="#" class="register-link">
-                  Log in / Register
+               <a href="#up" class="register-link dialog-link">
+                  Register
                </a>
+            </div>
+            <div class="menu__burger">
+               <svg class="menu__burger-logo" width="24" height="24" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z" />
+                  <path
+                     d="M1 18C1 17.4477 1.44772 17 2 17H22C22.5523 17 23 17.4477 23 18C23 18.5523 22.5523 19 22 19H2C1.44772 19 1 18.5523 1 18Z" />
+                  <path
+                     d="M1 6C1 5.44772 1.44772 5 2 5H22C22.5523 5 23 5.44772 23 6C23 6.55228 22.5523 7 22 7H2C1.44772 7 1 6.55228 1 6Z" />
+               </svg>
+
             </div>
          </div>
       </header>
@@ -341,6 +363,7 @@
          </div>
       </footer>
    </div>
+   <script src="js/menu.js"></script>
 </body>
 
 </html>
