@@ -8,12 +8,14 @@
    border: 0;
 }
 
-input,
-form,
+
 select,
 option,
-output:focus {
+output {
    outline: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
 }
 
 li {
@@ -57,6 +59,10 @@ body {
    line-height: 1;
    font-family: "Lato", sans-serif;
    overflow-x: hidden;
+}
+
+body._lock {
+   overflow: hidden;
 }
 
 /* ================================================================ */
@@ -195,6 +201,14 @@ body {
       fill: #333;
       margin: 0px 0px 0px 15px;
    }
+
+   .menu__burger._active {
+      background: url('../img/NavBar/close_menu.svg') 0 0 no-repeat;
+   }
+
+   .menu__burger._active .menu__burger-logo {
+      visibility: hidden;
+   }
 }
 
 /*
@@ -229,7 +243,7 @@ body {
       position: fixed;
       z-index: 5;
       top: 0;
-      left: -100%;
+      left: 0;
       width: 100%;
       height: 100%;
       padding: 90px 20px 30px 20px;
@@ -245,6 +259,10 @@ body {
       padding: 100px 30px 30px 30px;
       transition: left 0.5s ease 0s;
       overflow: auto;
+   }
+
+   .menu__list._active {
+      left: 0;
    }
 
    .menu__list {
@@ -3784,7 +3802,7 @@ body {
    fill: #424551;
 }
 
-[class*="-picture"]:focus {
+[class*="-picture"]:target {
    fill: #FF3F3A;
    outline: none;
 }
@@ -3794,6 +3812,7 @@ body {
    right: 0;
    top: 12px;
 }
+
 
 @media (max-width: 1087.98px) {
    .long-events-list__switcher-link-grid {
@@ -3818,6 +3837,8 @@ body {
 }
 
 .list-events {}
+
+
 
 .list-events__item--long {
    border: 1px solid #E5E8ED;
@@ -5029,6 +5050,7 @@ body {
    z-index: 999;
    opacity: 0;
    visibility: hidden;
+   overflow: auto;
 }
 
 
