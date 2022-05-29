@@ -137,7 +137,7 @@
             <div class="our-core-values__container">
                <div class="our-core-values__title subtitle-title">
                   <span class="subtitle-title__string">We always stand for</span>
-                  <h2 class="subtitle-title__title">Our core valuesOur core values</h2>
+                  <h2 class="subtitle-title__title">Our core values</h2>
                </div>
                <!-- ряд ценностей -->
                <div class="our-core-values__row values-core">
@@ -365,15 +365,11 @@
                   <span class="subtitle-title__string">Best tutors are all here</span>
                   <h2 class="subtitle-title__title">Meet our team</h2>
                </div>
-               <!-- кнопки слайдера -->
-               <!-- <a class="buttons-slider_right"></a>
-               <a class="buttons-slider_left"></a> -->
-               <!-- Блок с карточками -->
                <div class="best-tutors__slider">
-                  <div class="body-slider">
+                  <div class="body-slider body-slider_about">
                      <!-- карточка -->
-                     <div class="body-slider__item">
-                        <div class="body-slider__image">
+                     <div class="body-slider__item body-slider__item_about">
+                        <div class="body-slider__image body-slider__image_about">
                            <img src="img/best-tutors/dianne.webp" alt="фото тьютора">
                            <div class="body-slider__sotial">
                               <a class="fb-link fix" href="#">
@@ -414,7 +410,7 @@
                         </div>
                      </div>
                      <!-- карточка -->
-                     <div class="body-slider__item">
+                     <div class="body-slider__item body-slider__item_about">
                         <div class="body-slider__image">
                            <img src="img/best-tutors/jerome.webp" alt="фото тьютора">
                            <div class="body-slider__sotial">
@@ -456,7 +452,7 @@
                         </div>
                      </div>
                      <!-- карточка -->
-                     <div class="body-slider__item">
+                     <div class="body-slider__item body-slider__item_about">
                         <div class="body-slider__image">
                            <img src="img/best-tutors/kristine.webp" alt="фото тьютора">
                            <div class="body-slider__sotial">
@@ -498,7 +494,7 @@
                         </div>
                      </div>
                      <!-- карточка -->
-                     <div class="body-slider__item">
+                     <div class="body-slider__item body-slider__item_about">
                         <div class="body-slider__image">
                            <img src="img/best-tutors/marvin.webp" alt="фото тьютора">
                            <div class="body-slider__sotial">
@@ -540,7 +536,7 @@
                         </div>
                      </div>
                      <!-- карточка -->
-                     <div class="body-slider__item">
+                     <div class="body-slider__item body-slider__item_about">
                         <div class="body-slider__image">
                            <img src="img/best-tutors/leslie.webp" alt="фото тьютора">
                            <div class="body-slider__sotial">
@@ -582,7 +578,7 @@
                         </div>
                      </div>
                      <!-- карточка -->
-                     <div class="body-slider__item">
+                     <div class="body-slider__item body-slider__item_about">
                         <div class="body-slider__image">
                            <img src="img/best-tutors/Kathryn.webp" alt="фото тьютора">
                            <div class="body-slider__sotial">
@@ -714,6 +710,13 @@
          </div>
          <!-- слайдер с рекомендациями  -->
          <div class="testimonials--about">
+            <div class="testimonials__first-round"></div>
+            <div class="testimonials__second-round"></div>
+            <div class="testimonials__third-round"></div>
+            <img class="testimonials__dots" src="img/our-events/dots.svg" alt="dots">
+            <img class="testimonials__shapes" src="img/testimonials/shapes.svg" alt="shapes">
+            <div class="testimonials__corner-round"></div>
+            <div class="testimonials__corner-round_2"></div>
             <div class="testimonials__container">
                <div class="testimonials__title subtitle-title">
                   <span class="subtitle-title__string">TESTIMONIALS</span>
@@ -724,9 +727,16 @@
                   <div class="block-feedback__slider-controls">
                      <!-- кнопка    -->
                      <div class="block-feedback__button-box">
-                        <a href="#" class="block-feedback__button-left"></a>
+                        <a id="button-left" class="block-feedback__button-left">
+                           <svg class="arrow-slider" width="19" height="12" viewBox="0 0 19 12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z" />
+                           </svg>
+                        </a>
                      </div>
                      <!-- кнопка    -->
+                     <!-- слайд с отзывом  -->
                      <div class="block-feedback__testimonal-container">
                         <img src="img/testimonials/braces.svg" alt="ковычки" class="block-feedback__braces">
                         <div class="block-feedback__card">
@@ -747,14 +757,106 @@
                            </div>
                         </div>
                      </div>
+                     <!-- слайд с отзывом  -->
+                     <div class="block-feedback__testimonal-container">
+                        <img src="img/testimonials/braces.svg" alt="ковычки" class="block-feedback__braces">
+                        <div class="block-feedback__card">
+                           <p class="block-feedback__text">
+                              Amazing experience ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus
+                              quam viverra
+                              mus
+                              ulputate etiam eros. Pulvinar neque pharetra
+                              arcu
+                              diam maecenas diam integer in.
+                           </p>
+                           <div class="block-feedback__avatar">
+                              <div class="image-avatar">
+                                 <img src="img/testimonials/avatar_2.jpg" alt="аватарка">
+                              </div>
+                              <span class="name-avatar">Victory Zay</span>
+                              <span class="position-avatar">Position, Course</span>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- слайд с отзывом  -->
+                     <div class="block-feedback__testimonal-container">
+                        <img src="img/testimonials/braces.svg" alt="ковычки" class="block-feedback__braces">
+                        <div class="block-feedback__card">
+                           <p class="block-feedback__text">
+                              Just great lputate etiam eros. Pulvinar neque pharetra
+                              arcu
+                              diam maecenas diam integer in.
+                           </p>
+                           <div class="block-feedback__avatar">
+                              <div class="image-avatar">
+                                 <img src="img/testimonials/avatar_3.jpg" alt="аватарка">
+                              </div>
+                              <span class="name-avatar">Elizabeth Davy</span>
+                              <span class="position-avatar">Position, Course</span>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- слайд с отзывом  -->
+                     <div class="block-feedback__testimonal-container">
+                        <img src="img/testimonials/braces.svg" alt="ковычки" class="block-feedback__braces">
+                        <div class="block-feedback__card">
+                           <p class="block-feedback__text">
+                              I am so exited ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                              viverra
+                              mus
+                              lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
+                              turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra
+                              arcu Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi ad non nobis sunt,
+                              maxime quidem neque ipsum eaque. Doloremque ducimus itaque odit voluptatibus perferendis
+                              nam perspiciatis eius reiciendis quam delectus.
+                              diam maecenas diam integer in.
+                           </p>
+                           <div class="block-feedback__avatar">
+                              <div class="image-avatar">
+                                 <img src="img/testimonials/avatar_4.jpg" alt="аватарка">
+                              </div>
+                              <span class="name-avatar">Tim Bocher</span>
+                              <span class="position-avatar">Position, Course</span>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- слайд с отзывом  -->
+                     <div class="block-feedback__testimonal-container">
+                        <img src="img/testimonials/braces.svg" alt="ковычки" class="block-feedback__braces">
+                        <div class="block-feedback__card">
+                           <p class="block-feedback__text">
+                              Nothing better was happening with me, consectetur adipiscing elit. Justo, amet lectus quam
+                              viverra
+                              mus
+                              lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare
+                              turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra
+                              arcu
+                              diam maecenas diam integer in.
+                           </p>
+                           <div class="block-feedback__avatar">
+                              <div class="image-avatar">
+                                 <img src="img/testimonials/avatar_5.jpg" alt="аватарка">
+                              </div>
+                              <span class="name-avatar">Genry Horst</span>
+                              <span class="position-avatar">Position, Course</span>
+                           </div>
+                        </div>
+                     </div>
                      <!-- кнопка    -->
                      <div class="block-feedback__button-box">
-                        <a href="#" class="block-feedback__button-right"></a>
+                        <a id="button-right" class="block-feedback__button-right">
+                           <svg class="arrow-slider" width="19" height="12" viewBox="0 0 19 12"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M12.341 0.792893C12.7247 0.402369 13.3467 0.402369 13.7304 0.792893L18.1513 5.29289C18.535 5.68342 18.535 6.31658 18.1513 6.70711L13.7304 11.2071C13.3467 11.5976 12.7247 11.5976 12.341 11.2071C11.9574 10.8166 11.9574 10.1834 12.341 9.79289L15.0849 7H1.7378C1.19522 7 0.755371 6.55228 0.755371 6C0.755371 5.44772 1.19522 5 1.7378 5H15.0849L12.341 2.20711C11.9574 1.81658 11.9574 1.18342 12.341 0.792893Z" />
+                           </svg>
+
+                        </a>
                      </div>
                      <!-- кнопка    -->
                   </div>
                   <div class="bullet-navigation">
-                     <div class="bullet-navigation__item"></div>
+                     <div class="bullet-navigation__item active"></div>
                      <div class="bullet-navigation__item"></div>
                      <div class="bullet-navigation__item"></div>
                      <div class="bullet-navigation__item"></div>
@@ -965,7 +1067,11 @@
                   <h2 class="subtitle-title__title">Subscribe to the Createx School announcements</h2>
                </div>
                <div class="subscribe-form__email-field">
-                  <input type="text" class="subscribe-form-email">
+                  <form class="subscribe-form-email">
+                     <input class="subscribe-form-email" autocomplete="off" type="email"
+                        placeholder="Your working email">
+                  </form>
+
                   <a href="#" class="subscribe-form__button button">
                      Subscribe
                   </a>
@@ -1299,6 +1405,7 @@
       </div>
    </div>
    <script src="js/menu.js"></script>
+   <script src="js/slider.js"></script>
 </body>
 
 </html>
