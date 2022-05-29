@@ -206,7 +206,7 @@ body._lock {
    }
 
    .menu__burger._active .menu__burger-logo {
-      visibility: hidden;
+      opacity: 0;
    }
 }
 
