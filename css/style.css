@@ -12,8 +12,6 @@
 select,
 option {
    outline: none;
-   -webkit-appearance: none;
-   -moz-appearance: none;
    appearance: none;
 }
 
@@ -112,6 +110,7 @@ body._lock {
 @media (max-width: 1087.98px) {
    [class*="__container"] {
       max-width: 950px;
+      padding: 0px 15px;
    }
 }
 
@@ -210,18 +209,6 @@ body._lock {
    }
 }
 
-/*
-
-   .menu__list>li:last-child {
-      margin-bottom: 0;
-   }
-
-   .menu__link {
-      font-size: 24px;
-      color: green;
-   }
-} */
-
 /* -----!!!!!!!!!!!!!!!!!!!!!!!!!---------------- */
 
 .menu {
@@ -271,7 +258,6 @@ body._lock {
    .menu__list {
       flex-direction: column;
       align-items: center;
-
    }
 
    .menu__link {
@@ -282,6 +268,13 @@ body._lock {
 
 .menu__list {
    display: flex;
+}
+
+@media(max-width: 767.98px) {
+   .menu__list {
+      background: url('../img/burger/circles.svg') -40% -20% no-repeat, url('../img/subscribe-form/hands_and_hats.svg') center bottom no-repeat;
+      background-color: #fff;
+   }
 }
 
 .menu__list>li {
@@ -331,7 +324,7 @@ body._lock {
       color: #F75E05;
       opacity: 0.8;
       line-height: 1.6;
-      font-size: 24px;
+      font-size: 34px;
    }
 }
 
@@ -404,8 +397,13 @@ body._lock {
 @media (max-width: 479.98px) {
    .button {
       padding: 0px 5px;
-      line-height: 1.1;
       flex: 0 1 100px;
+   }
+}
+
+@media (max-width: 479.98px) {
+   .test__button {
+      line-height: 1.2;
    }
 }
 
@@ -679,13 +677,9 @@ body._lock {
 @media (max-width: 991.98px) {
    .colorless-button {
       flex: 0 1 150px;
-      font-weight: 700;
-      border-radius: 4px;
-      letter-spacing: 0.5px;
       line-height: 2.6;
       padding: 0px 10px;
       margin: 0px 24px 0px 0px;
-      outline: 1px solid #F75E05;
    }
 }
 
@@ -694,7 +688,7 @@ body._lock {
       flex: 0 1 100px;
       font-weight: 700;
       line-height: 1;
-      padding: 0px 10px;
+      padding: 5px 10px;
       margin: 0px 14px 0px 0px;
    }
 }
@@ -1535,7 +1529,6 @@ body._lock {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      min-height: none;
       margin: 0px 0px 12px 0px;
    }
 }
@@ -5334,13 +5327,38 @@ body._lock {
    padding: 150px 0px 0px 0px;
 }
 
+@media (max-width: 991.98px) {
+   .get-in-touch__container {
+      padding: 120px 0px 0px 0px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .get-in-touch__container {
+      padding: 100px 0px 0px 0px;
+      margin: 0px 10px;
+   }
+}
+
 .get-in-touch__content-box {
    display: flex;
    flex-direction: row;
 }
 
+@media (max-width: 767.98px) {
+   .get-in-touch__content-box {
+      flex-direction: column;
+   }
+}
+
 .get-in-touch__text-block {
    flex: 0 1 525px;
+}
+
+@media (max-width: 767.98px) {
+   .get-in-touch__text-block {
+      flex: 0 1 auto;
+   }
 }
 
 .get-in-touch__title {}
@@ -5436,6 +5454,13 @@ body._lock {
    position: relative;
 }
 
+@media (max-width: 767.98px) {
+   .get-in-touch__image-block {
+      flex: 0 1 auto;
+      margin: 30px;
+   }
+}
+
 .get-in-touch__image-container {
    position: absolute;
    bottom: 0;
@@ -5443,18 +5468,48 @@ body._lock {
    border-radius: 4px;
 }
 
-.get-in-touch__map-picture {
+.get-in-touch__image-container img {
    max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+   .get-in-touch__image-container {
+      top: 15%;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .get-in-touch__image-container {
+      position: relative;
+   }
+}
+
+.get-in-touch__map-picture {
    max-height: 412px;
 }
+
+
 
 /* блок с формой регистрации ----------------------------------------->>> */
 
 .any-questions {}
 
 .any-questions__container {
-   padding: 180px 0px 180px 0px;
+   padding: 180px 0px;
    display: flex;
+}
+
+@media (max-width: 991.98px) {
+   .any-questions__container {
+      padding: 120px 0px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .any-questions__container {
+      padding: 100px 0px;
+      flex-direction: column-reverse;
+   }
 }
 
 .any-questions__image-block {
@@ -5464,17 +5519,48 @@ body._lock {
    align-items: center;
 }
 
-.any-questions__image {}
+@media (max-width: 1087.98px) {
+   .any-questions__image-block {
+      margin: 0px 30px 0px 0px;
+   }
+}
 
-.any-questions__woman-picture {
+@media (max-width: 991.98px) {
+   .any-questions__image-block {
+      flex: 0 1 30%;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .any-questions__image-block {
+      flex: 0 1 100%;
+      margin: 5% 0% 0% 5%;
+   }
+}
+
+.any-questions__image img {
    max-width: 100%;
 }
+
+.any-questions__woman-picture {}
 
 .any-questions__form-block {
    flex: 0 1 56.667%;
 }
 
+@media (max-width: 767.98px) {
+   .any-questions__form-block {
+      flex: 0 1 100%;
+   }
+}
+
 .any-questions__title {}
+
+@media (max-width: 767.98px) {
+   .any-questions__title {
+      text-align: center;
+   }
+}
 
 .any-questions__box-form {}
 
@@ -5485,6 +5571,13 @@ body._lock {
    flex-direction: row;
    flex-wrap: wrap;
    column-gap: 24px;
+}
+
+@media (max-width: 767.98px) {
+   .form-box__block {
+      column-gap: 0;
+      justify-content: center;
+   }
 }
 
 .form-box__first-name {
@@ -5499,7 +5592,12 @@ body._lock {
 .form-box__label {
    line-height: 1.6;
    color: #424551;
+}
 
+@media (max-width: 767.98px) {
+   .form-box__label {
+      margin-left: 15px;
+   }
 }
 
 .form-box__input {
@@ -5517,6 +5615,12 @@ body._lock {
    line-height: 1.6;
    color: #9A9CA5;
    padding: 13px 0px 0px 16px;
+}
+
+@media (max-width: 767.98px) {
+   .form-box__input-area {
+      margin: 0px 15px;
+   }
 }
 
 /* .form-box__label-first-name {} */
@@ -5570,10 +5674,22 @@ body._lock {
    display: flex;
 }
 
+@media (max-width: 767.98px) {
+   .form-box__footer {
+      margin: 0px 10px;
+   }
+}
+
 .form-box__checkbox {
    flex: 0 1 50%;
    min-height: 52px;
    position: relative;
+}
+
+@media (max-width: 767.98px) {
+   .form-box__checkbox {
+      flex: 0 1 70%;
+   }
 }
 
 .form-box__input-check {
@@ -5615,9 +5731,31 @@ body._lock {
    justify-content: flex-end;
 }
 
+@media (max-width: 1087.98px) {
+   .form-box__btn {
+      max-height: 52px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .form-box__btn {
+      flex: 0 1 30%;
+      justify-content: center;
+   }
+}
+
 .form-box__button {
    flex: 0 1 336px;
 }
+
+@media (max-width: 767.98px) {
+   .form-box__button {
+      flex: 0 1 auto;
+      max-height: 32px;
+   }
+}
+
+
 
 /* Форма для входа в аккаунт --------------- */
 .sign-in {
